@@ -110,4 +110,50 @@ public class Match {
     }
     //quarter end
 
+    private void generateTeamOdds() {
+        Random rand = new Random();
+        // Generate odds between 1.5 and 3.0
+        this.team1Odds = Math.round((1.5 + rand.nextDouble() * 1.5) * 100.0) / 100.0;
+        this.team2Odds = Math.round((1.5 + rand.nextDouble() * 1.5) * 100.0) / 100.0;
+    }
+
+    // Total
+    private void calculateTotalScores() {
+        this.team1Score = 0;
+        this.team2Score = 0;
+
+        for (int i = 0; i < 4; i++) {
+            this.team1Score += this.team1QuarterScores[i];
+            this.team2Score += this.team2QuarterScores[i];
+        }
+    }
+
+    private void generateTotalBets() {
+        Random rand = new Random();
+        int actualTotal = team1Score + team2Score;
+        this.totalBets = new TotalBet[5];
+
+        int[] totalValues = {
+                actualTotal - rand.nextInt(12,15),
+                actualTotal - rand.nextInt(5,8),
+                actualTotal - rand.nextInt(1,3),
+                actualTotal + rand.nextInt(5,8),
+                actualTotal + rand.nextInt(15,17)
+        };
+
+        for (int i = totalValues.length - 1; i > 0; i--) {
+            int j = rand.nextInt(i + 1);
+
+            int temp = totalValues[i];
+            totalValues[i] = totalValues[j];
+            totalValues[j] = temp;
+        }
+
+        for (int i = 0; i < 5; i++) {
+            double odds = Math.round((1.5 + rand.nextDouble() * 1.5) * 100.0) / 100.0;
+            boolean isWin = actualTotal > totalValues[i];
+            totalBets[i] = new TotalBet(totalValues[i], odds, isWin);
+        }
+    }
+    // end Total
 }
