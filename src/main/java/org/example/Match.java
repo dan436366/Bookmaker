@@ -156,4 +156,66 @@ public class Match {
         }
     }
     // end Total
+
+    //handicap
+    private void generateHandicapBets() {
+        Random rand = new Random();
+        int scoreDiff = team1Score - team2Score;
+        String winningTeam = scoreDiff > 0 ? team1 : team2;
+        int absDiff = Math.abs(scoreDiff);
+
+        team1HandicapBets = new HandicapBet[5];
+        team2HandicapBets = new HandicapBet[5];
+
+        //first team handicaps
+        int[] handicapsTeam1 = {
+                rand.nextInt(1,3),
+                rand.nextInt(4,6),
+                rand.nextInt(7,9),
+                rand.nextInt(10,15),
+                rand.nextInt(16,20)};
+        for (int i = 0; i < 5; i++) {
+            boolean isTeam1Winner = team1.equals(winningTeam);
+            boolean isWin = false;
+            double odds;
+
+            if (isTeam1Winner) {
+                isWin = scoreDiff >= handicapsTeam1[i];
+                double diffFactor = Math.abs(handicapsTeam1[i] - absDiff) / 10.0;
+                odds = 1.5 + diffFactor + rand.nextDouble() * 0.5;
+            } else {
+                isWin = false;
+                odds = 2.0 + (handicapsTeam1[i] / 10.0) + rand.nextDouble() * 0.5;
+            }
+
+            team1HandicapBets[i] = new HandicapBet(handicapsTeam1[i],
+                    Math.round(odds * 100.0) / 100.0, isWin);
+        }
+
+        int[] handicapsTeam2 = {
+                rand.nextInt(1,3),
+                rand.nextInt(4,6),
+                rand.nextInt(7,9),
+                rand.nextInt(10,15),
+                rand.nextInt(16,20)};
+        for (int i = 0; i < 5; i++) {
+            boolean isTeam2Winner = team2.equals(winningTeam);
+            boolean isWin = false;
+            double odds;
+
+            if (isTeam2Winner) {
+                isWin = (-scoreDiff) >= handicapsTeam2[i];
+                double diffFactor = Math.abs(handicapsTeam2[i] - absDiff) / 10.0;
+                odds = 1.5 + diffFactor + rand.nextDouble() * 0.5;
+            } else {
+                isWin = false;
+                odds = 2.0 + (handicapsTeam2[i] / 10.0) + rand.nextDouble() * 0.5;
+            }
+
+            team2HandicapBets[i] = new HandicapBet(handicapsTeam2[i],
+                    Math.round(odds * 100.0) / 100.0, isWin);
+        }
+    }
+    //handicap end
+
 }
