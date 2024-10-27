@@ -80,4 +80,34 @@ public class Match {
             this.team2Win = team2Win;
         }
     }
+
+    //quarter
+    private void generateQuarterScores() {
+        Random rand = new Random();
+        this.team1QuarterScores = new int[4];
+        this.team2QuarterScores = new int[4];
+
+
+        for (int i = 0; i < 4; i++) {
+            // More realistic basketball quarter scores (20-35 points per quarter)
+            this.team1QuarterScores[i] = 20 + rand.nextInt(16);
+            this.team2QuarterScores[i] = 20 + rand.nextInt(16);
+        }
+    }
+
+    private void generateQuarterBets() {
+        Random rand = new Random();
+        this.quarterBets = new QuarterBet[4];
+
+        for (int i = 0; i < 4; i++) {
+            double team1Odds = Math.round((1.5 + rand.nextDouble() * 1.5) * 100.0) / 100.0;
+            double team2Odds = Math.round((1.5 + rand.nextDouble() * 1.5) * 100.0) / 100.0;
+            boolean team1Win = team1QuarterScores[i] > team2QuarterScores[i];
+            boolean team2Win = team2QuarterScores[i] > team1QuarterScores[i];
+
+            quarterBets[i] = new QuarterBet(i + 1, team1Odds, team2Odds, team1Win, team2Win);
+        }
+    }
+    //quarter end
+
 }
