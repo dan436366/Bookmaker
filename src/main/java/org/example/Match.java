@@ -218,4 +218,50 @@ public class Match {
     }
     //handicap end
 
+    // Method to process a bet
+    public double processBet(String betType, int betIndex, String teamChoice, double betAmount, double userBalance) {
+
+        double winAmount = 0;
+        boolean isWin = false;
+
+        switch (betType.toLowerCase()) {
+            case "total":
+                if (betIndex >= 0 && betIndex < totalBets.length) {
+                    isWin = totalBets[betIndex].isWin;
+                    winAmount = isWin ? betAmount * totalBets[betIndex].odds : 0;
+                }
+                break;
+            case "handicap":
+                HandicapBet[] relevantBets = teamChoice.equals(team1) ? team1HandicapBets : team2HandicapBets;
+                if (betIndex >= 0 && betIndex < relevantBets.length) {
+                    isWin = relevantBets[betIndex].isWin;
+                    winAmount = isWin ? betAmount * relevantBets[betIndex].odds : 0;
+                }
+                break;
+            case "quarter":
+                if (betIndex >= 0 && betIndex < quarterBets.length) {
+                    boolean relevantWin = teamChoice.equals(team1) ?
+                            quarterBets[betIndex].team1Win : quarterBets[betIndex].team2Win;
+                    double relevantOdds = teamChoice.equals(team1) ?
+                            quarterBets[betIndex].team1Odds : quarterBets[betIndex].team2Odds;
+                    isWin = relevantWin;
+                    winAmount = isWin ? betAmount * relevantOdds : 0;
+                }
+                break;
+            case "winlose":
+                isWin = teamChoice.equals(winningTeam);
+                double odds = teamChoice.equals(team1) ? team1Odds : team2Odds;
+                winAmount = isWin ? betAmount * odds : 0;
+                break;
+            default:
+                throw new IllegalArgumentException("Invalid bet type");
+        }
+
+        return winAmount;
+    }
+   //Method for limitation user bet
+    public boolean canPlaceBet(double userBalance, double betAmount) {
+        return betAmount > 0 && userBalance >= betAmount;
+    }
+
 }
