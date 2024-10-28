@@ -92,4 +92,31 @@ public class BettingAgency {
         // Виводимо фінальний прибуток букмекерської контори
         System.out.printf("\nFinal agency profit: $%.2f\n", agencyProfit);
     }
+
+    private static List<Match> generateMatches() {
+        List<Match> matches = new ArrayList<>();
+        for (int i = 0; i < 5; i++) {
+            String team1 = TEAMS[random.nextInt(TEAMS.length)];
+            String team2;
+            do {
+                team2 = TEAMS[random.nextInt(TEAMS.length)];
+            } while (team1.equals(team2));
+
+            matches.add(new Match(team1, team2));
+        }
+        return matches;
+    }
+
+    private static List<User> generateUsers() {
+        List<User> users = new ArrayList<>();
+        for (String userName : USERS) {
+            users.add(new User(userName, 100 + random.nextInt(401))); // Баланс від 100 до 1000
+        }
+        return users;
+    }
+
+    private static String getRandomBetType() {
+        String[] betTypes = {"total", "handicap", "quarter", "winlose"};
+        return betTypes[random.nextInt(betTypes.length)];
+    }
 }
