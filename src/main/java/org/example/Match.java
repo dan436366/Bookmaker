@@ -264,4 +264,83 @@ public class Match {
         return betAmount > 0 && userBalance >= betAmount;
     }
 
+    public Match(String team1, String team2) {
+        this.team1 = team1;
+        this.team2 = team2;
+        initializeMatch();
+    }
+    //method to initialize Match
+    private void initializeMatch() {
+        Random rand = new Random();
+
+        generateQuarterScores();
+
+        calculateTotalScores();
+
+        generateTeamOdds();
+
+        generateTotalBets();
+        generateHandicapBets();
+        generateQuarterBets();
+
+        this.winningTeam = this.team1Score > this.team2Score ? team1 : team2;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Match: ").append(team1).append(" vs ").append(team2).append("\n");
+        sb.append(String.format("Final Score: %s %d - %d %s\n",
+                team1, team1Score, team2Score, team2));
+
+        // Quarter scores
+        for (int i = 0; i < 4; i++) {
+            sb.append(String.format("Quarter %d: %d - %d\n",
+                    i + 1, team1QuarterScores[i], team2QuarterScores[i]));
+        }
+
+        sb.append("\nWin/Lose: ").append(team1).append(" Odds: ").append(team1Odds)
+                .append(team1.equals(winningTeam) ? " (W)" : " (L)").append(", ")
+                .append(team2).append(" Odds: ").append(team2Odds)
+                .append(team2.equals(winningTeam) ? " (W)" : " (L)").append("\n");
+
+        // Total bets
+        sb.append("\nTotal Bets:\n");
+        for (int i = 0; i < totalBets.length; i++) {
+            sb.append(String.format("Total %d (+%d): %.2f (%s)\n",
+                    i + 1, totalBets[i].totalValue, totalBets[i].odds,
+                    totalBets[i].isWin ? "W" : "L"));
+        }
+
+        // Handicap bets
+        sb.append("\nHandicap Bets for ").append(team1).append(":\n");
+        for (int i = 0; i < team1HandicapBets.length; i++) {
+            sb.append(String.format("Handicap Odds %d(+%d on %s win)(%s): %.2f\n",
+                    i + 1,
+                    team1HandicapBets[i].handicapValue,
+                    team1,
+                    team1HandicapBets[i].isWin ? "W" : "L",
+                    team1HandicapBets[i].odds));
+        }
+
+        sb.append("\nHandicap Bets for ").append(team2).append(":\n");
+        for (int i = 0; i < team2HandicapBets.length; i++) {
+            sb.append(String.format("Handicap Odds %d(+%d on %s win)(%s): %.2f\n",
+                    i + 1,
+                    team2HandicapBets[i].handicapValue,
+                    team2,
+                    team2HandicapBets[i].isWin ? "W" : "L",
+                    team2HandicapBets[i].odds));
+        }
+
+        // Quarter bets
+        sb.append("\nQuarter Bets:\n");
+        for (QuarterBet qBet : quarterBets) {
+            sb.append(String.format("Quarter %d: %s %.2f (%s) - %s %.2f (%s)\n",
+                    qBet.quarter, team1, qBet.team1Odds, qBet.team1Win ? "W" : "L",
+                    team2, qBet.team2Odds, qBet.team2Win ? "W" : "L"));
+        }
+
+        return sb.toString();
+    }
 }
