@@ -58,4 +58,60 @@ public class BettingAgencyMockitoTests {
         double winAmount = mockMatch.processBet("handicap", betIndex, mockMatch.getTeam2(), betAmount, 500);
         assertEquals(0.0, winAmount, "Handicap Bet amount should be 0 on loss for Team 2.");
     }
+
+    @Test
+    void testPlaceBet_UserHasEnoughBalance() {
+        Match mockMatch = mock(Match.class);
+        User mockUser = mock(User.class);
+
+        when(mockUser.getBalance()).thenReturn(100.0);
+        doNothing().when(mockUser).placeBet(50.0);
+
+        mockUser.placeBet(50.0);
+
+        verify(mockUser, times(1)).placeBet(50.0);
+        assertEquals(100.0, mockUser.getBalance(), "User should have enough balance to place bet");
+    }
+
+    @Test
+    void testPlaceBet_UserHasInsufficientBalance() {
+        User mockUser = mock(User.class);
+
+        when(mockUser.getBalance()).thenReturn(30.0);
+        doThrow(new IllegalArgumentException("Insufficient balance"))
+                .when(mockUser).placeBet(50.0);
+
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            mockUser.placeBet(50.0);
+        });
+
+        assertEquals("Insufficient balance", exception.getMessage());
+        verify(mockUser, times(1)).placeBet(50.0);
+    }
+
+    @Test
+    void testProcessBet_SuccessfulTotalBet() {
+        Match mockMatch = mock(Match.class);
+
+        when(mockMatch.processBet("total", 0, "", 100.0, 500.0))
+                .thenReturn(180.0);
+
+        double result = mockMatch.processBet("total", 0, "", 100.0, 500.0);
+        assertEquals(180.0, result, "Total bet should return correct win amount");
+
+        verify(mockMatch, times(1)).processBet("total", 0, "", 100.0, 500.0);
+    }
+
+    @Test
+    void testProcessBet_UnsuccessfulHandicapBet() {
+        Match mockMatch = mock(Match.class);
+
+        when(mockMatch.processBet("handicap", 1, "Lakers", 100.0, 500.0))
+                .thenReturn(0.0);
+
+        double result = mockMatch.processBet("handicap", 1, "Lakers", 100.0, 500.0);
+        assertEquals(0.0, result, "Handicap bet loss should return 0");
+
+        verify(mockMatch, times(1)).processBet("handicap", 1, "Lakers", 100.0, 500.0);
+    }
 }
