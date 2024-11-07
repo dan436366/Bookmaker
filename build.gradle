@@ -17,8 +17,20 @@ repositories {
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    // Mockito for mocking
+    testImplementation 'org.mockito:mockito-core:5.2.0'
+
+    // Optional: Mockito integration with JUnit 5
+    testImplementation 'org.mockito:mockito-junit-jupiter:5.2.0'
+
+    // Optional: For verifying calls with argument matchers (Advanced Mockito features)
+    testImplementation 'org.mockito:mockito-inline:5.2.0'
+
+    testImplementation 'net.bytebuddy:byte-buddy:1.15.10'
 }
 
 test {
     useJUnitPlatform()
+    jvmArgs '-Dnet.bytebuddy.experimental=true'
 }
