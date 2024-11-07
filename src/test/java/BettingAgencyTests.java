@@ -148,3 +148,4 @@ public class BettingAgencyTests{
         System.out.println("testCalculateTotalScores: Test passed successfully.");
     }
 }
+
