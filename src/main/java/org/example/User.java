@@ -1,8 +1,8 @@
 package org.example;
 
 public class User {
-    private String name;
-    private double balance;
+    public String name;
+    public double balance;
 
     public User(String name, double balance) {
         this.name = name;
