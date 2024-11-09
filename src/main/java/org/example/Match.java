@@ -221,6 +221,7 @@ public class Match {
                 if (betIndex >= 0 && betIndex < totalBets.length) {
                     isWin = totalBets[betIndex].isWin;
                     winAmount = isWin ? betAmount * totalBets[betIndex].odds : 0;
+                    logger.info("Total bet result - Win: {}, Win Amount: {}", isWin, winAmount);
                 }
                 break;
             case "handicap":
@@ -228,6 +229,7 @@ public class Match {
                 if (betIndex >= 0 && betIndex < relevantBets.length) {
                     isWin = relevantBets[betIndex].isWin;
                     winAmount = isWin ? betAmount * relevantBets[betIndex].odds : 0;
+                    logger.info("Handicap bet result - Team: {}, Win: {}, Win Amount: {}", teamChoice, isWin, winAmount);
                 }
                 break;
             case "quarter":
@@ -238,6 +240,7 @@ public class Match {
                             quarterBets[betIndex].team1Odds : quarterBets[betIndex].team2Odds;
                     isWin = relevantWin;
                     winAmount = isWin ? betAmount * relevantOdds : 0;
+                    logger.info("Quarter bet result - Team: {}, Win: {}, Win Amount: {}", teamChoice, isWin, winAmount);
                 }
                 break;
             case "winlose":
@@ -261,7 +264,6 @@ public class Match {
         this.team1 = team1;
         this.team2 = team2;
         initializeMatch();
-        logger.info("Match initialized: {} vs {}", team1, team2);
     }
 
     //method to initialize Match
@@ -279,6 +281,7 @@ public class Match {
         generateQuarterBets();
 
         this.winningTeam = this.team1Score > this.team2Score ? team1 : team2;
+        logger.info("Match between: {} vs {}, Winning team: {}", team1, team2, winningTeam);
     }
 
     @Override
