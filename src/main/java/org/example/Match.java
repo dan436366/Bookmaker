@@ -1,8 +1,13 @@
 package org.example;
 
 import java.util.Random;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 
 public class Match {
+    private static final Logger logger = LogManager.getLogger(Match.class);
+
     private String team1;
     private String team2;
     public int team1Score;
@@ -206,6 +211,7 @@ public class Match {
 
     // Method to process a bet
     public double processBet(String betType, int betIndex, String teamChoice, double betAmount, double userBalance) {
+        logger.warn("Processing bet: Type={}, Team={}, Amount={}", betType, teamChoice, betAmount);
 
         double winAmount = 0;
         boolean isWin = false;
@@ -240,6 +246,7 @@ public class Match {
                 winAmount = isWin ? betAmount * odds : 0;
                 break;
             default:
+                logger.error("Invalid bet type: {}", betType);
                 throw new IllegalArgumentException("Invalid bet type");
         }
 
@@ -254,7 +261,9 @@ public class Match {
         this.team1 = team1;
         this.team2 = team2;
         initializeMatch();
+        logger.info("Match initialized: {} vs {}", team1, team2);
     }
+
     //method to initialize Match
     private void initializeMatch() {
         Random rand = new Random();
