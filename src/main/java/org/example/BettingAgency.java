@@ -4,17 +4,23 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class BettingAgency {
+    private static final Logger logger = LogManager.getLogger(BettingAgency.class);
     private static final Random random = new Random();
     private static final String[] TEAMS = {"Lakers", "Warriors", "Celtics", "Nets", "Heat"};
     private static final String[] USERS = {"Alice", "Bob", "Charlie", "Pes Patron"};
 
     public static void main(String[] args) {
+        logger.info("Starting Betting Agency simulation...");
         List<Match> matches = generateMatches();
         List<User> users = generateUsers();
         double agencyProfit = 0;
 
         for (Match match : matches) {
+//            logger.info("Processing match: {}", match);
             System.out.println("\n=== New Match ===");
 
             System.out.println(match);
@@ -34,6 +40,7 @@ public class BettingAgency {
 
                 // Перевіряємо, чи може користувач зробити ставку
                 if (!match.canPlaceBet(user.getBalance(), betAmount)) {
+                    logger.warn("{} cannot place bet of ${}. Insufficient balance: ${}", user.getName(), betAmount, user.getBalance());
                     System.out.printf("%s cannot place bet of %.2f (insufficient balance: %.2f)\n",
                             user.getName(), betAmount, user.getBalance());
                     continue;
@@ -68,8 +75,10 @@ public class BettingAgency {
                     if (winAmount > 0) {
                         user.winBet(winAmount);
                         agencyProfit -= winAmount;
+                        logger.info("{} won ${} with bet type {}", user.getName(), winAmount, betType);
                         System.out.printf("%s won: %.2f\n", user.getName(), winAmount);
                     } else {
+                        logger.info("{} lost ${} with bet type {}", user.getName(), betAmount, betType);
                         System.out.printf("%s lost: %.2f\n", user.getName(), betAmount);
                     }
 
@@ -77,6 +86,7 @@ public class BettingAgency {
                     // Повертаємо ставку у випадку помилки
                     user.winBet(betAmount);
                     agencyProfit -= betAmount;
+                    logger.error("Error processing bet for {}: {}", user.getName(), e.getMessage(), e);
                     System.out.printf("Error processing bet for %s: %s\n",
                             user.getName(), e.getMessage());
                 }
@@ -89,6 +99,7 @@ public class BettingAgency {
             }
         }
 
+        logger.info("Final agency profit: ${}", agencyProfit);
         // Виводимо фінальний прибуток букмекерської контори
         System.out.printf("\nFinal agency profit: $%.2f\n", agencyProfit);
     }

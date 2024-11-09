@@ -1,0 +1,1429 @@
+2024-11-09 13:50:10 [main] INFO  org.example.User - User created: Name=Alice, Balance=424.0
+2024-11-09 13:50:10 [main] INFO  org.example.User - User created: Name=Bob, Balance=171.0
+2024-11-09 13:50:10 [main] INFO  org.example.User - User created: Name=Charlie, Balance=328.0
+2024-11-09 13:50:10 [main] INFO  org.example.User - User created: Name=Pes Patron, Balance=283.0
+2024-11-09 13:50:10 [main] INFO  org.example.User - Alice placed a bet of $56.0. New balance: $368.0
+2024-11-09 13:50:10 [main] INFO  org.example.User - Bob placed a bet of $66.0. New balance: $105.0
+2024-11-09 13:50:10 [main] INFO  org.example.User - Bob won $146.52. New balance: $251.52
+2024-11-09 13:50:10 [main] INFO  org.example.User - Charlie placed a bet of $67.0. New balance: $261.0
+2024-11-09 13:50:10 [main] INFO  org.example.User - Charlie won $148.74. New balance: $409.74
+2024-11-09 13:50:10 [main] INFO  org.example.User - Pes Patron placed a bet of $112.0. New balance: $171.0
+2024-11-09 13:50:10 [main] INFO  org.example.User - Alice placed a bet of $103.0. New balance: $265.0
+2024-11-09 13:50:10 [main] INFO  org.example.User - Alice won $302.82. New balance: $567.8199999999999
+2024-11-09 13:50:10 [main] INFO  org.example.User - Bob placed a bet of $109.0. New balance: $142.52
+2024-11-09 13:50:10 [main] INFO  org.example.User - Bob won $190.75. New balance: $333.27
+2024-11-09 13:50:10 [main] INFO  org.example.User - Charlie placed a bet of $118.0. New balance: $291.74
+2024-11-09 13:50:10 [main] INFO  org.example.User - Charlie won $274.94. New balance: $566.6800000000001
+2024-11-09 13:50:10 [main] INFO  org.example.User - Pes Patron placed a bet of $53.0. New balance: $118.0
+2024-11-09 13:50:10 [main] INFO  org.example.User - Alice placed a bet of $77.0. New balance: $490.81999999999994
+2024-11-09 13:50:10 [main] INFO  org.example.User - Alice won $187.88. New balance: $678.6999999999999
+2024-11-09 13:50:10 [main] INFO  org.example.User - Bob placed a bet of $68.0. New balance: $265.27
+2024-11-09 13:50:10 [main] INFO  org.example.User - Charlie placed a bet of $98.0. New balance: $468.68000000000006
+2024-11-09 13:50:10 [main] INFO  org.example.User - Charlie won $293.02000000000004. New balance: $761.7
+2024-11-09 13:50:10 [main] INFO  org.example.User - Alice placed a bet of $87.0. New balance: $591.6999999999999
+2024-11-09 13:50:10 [main] INFO  org.example.User - Alice won $134.85. New balance: $726.55
+2024-11-09 13:50:10 [main] INFO  org.example.User - Bob placed a bet of $127.0. New balance: $138.26999999999998
+2024-11-09 13:50:10 [main] INFO  org.example.User - Bob won $300.99. New balance: $439.26
+2024-11-09 13:50:10 [main] INFO  org.example.User - Charlie placed a bet of $51.0. New balance: $710.7
+2024-11-09 13:50:10 [main] INFO  org.example.User - Charlie won $107.10000000000001. New balance: $817.8000000000001
+2024-11-09 13:50:10 [main] INFO  org.example.User - Pes Patron placed a bet of $117.0. New balance: $1.0
+2024-11-09 13:50:10 [main] INFO  org.example.User - Pes Patron won $345.15000000000003. New balance: $346.15000000000003
+2024-11-09 13:50:10 [main] INFO  org.example.User - Alice placed a bet of $119.0. New balance: $607.55
+2024-11-09 13:50:10 [main] INFO  org.example.User - Bob placed a bet of $65.0. New balance: $374.26
+2024-11-09 13:50:10 [main] INFO  org.example.User - Charlie placed a bet of $97.0. New balance: $720.8000000000001
+2024-11-09 13:50:10 [main] INFO  org.example.User - Pes Patron placed a bet of $68.0. New balance: $278.15000000000003
+2024-11-09 14:01:32 [main] INFO  org.example.Match - Match initialized: Heat vs Warriors
+2024-11-09 14:01:32 [main] INFO  org.example.Match - Match initialized: Celtics vs Warriors
+2024-11-09 14:01:32 [main] INFO  org.example.Match - Match initialized: Warriors vs Lakers
+2024-11-09 14:01:32 [main] INFO  org.example.Match - Match initialized: Lakers vs Warriors
+2024-11-09 14:01:32 [main] INFO  org.example.Match - Match initialized: Warriors vs Celtics
+2024-11-09 14:01:32 [main] INFO  org.example.User - User created: Name=Alice, Balance=421.0
+2024-11-09 14:01:32 [main] INFO  org.example.User - User created: Name=Bob, Balance=137.0
+2024-11-09 14:01:32 [main] INFO  org.example.User - User created: Name=Charlie, Balance=184.0
+2024-11-09 14:01:32 [main] INFO  org.example.User - User created: Name=Pes Patron, Balance=312.0
+2024-11-09 14:01:32 [main] INFO  org.example.User - Alice placed a bet of $110.0. New balance: $311.0
+2024-11-09 14:01:32 [main] INFO  org.example.Match - Processing bet: Type=winlose, Team=Heat, Amount=110.0
+2024-11-09 14:01:32 [main] INFO  org.example.User - Bob placed a bet of $74.0. New balance: $63.0
+2024-11-09 14:01:32 [main] INFO  org.example.Match - Processing bet: Type=winlose, Team=Warriors, Amount=74.0
+2024-11-09 14:01:32 [main] INFO  org.example.User - Bob won $161.32000000000002. New balance: $224.32000000000002
+2024-11-09 14:01:32 [main] INFO  org.example.User - Charlie placed a bet of $130.0. New balance: $54.0
+2024-11-09 14:01:32 [main] INFO  org.example.Match - Processing bet: Type=quarter, Team=Warriors, Amount=130.0
+2024-11-09 14:01:32 [main] INFO  org.example.User - Charlie won $318.5. New balance: $372.5
+2024-11-09 14:01:32 [main] INFO  org.example.User - Pes Patron placed a bet of $122.0. New balance: $190.0
+2024-11-09 14:01:32 [main] INFO  org.example.Match - Processing bet: Type=total, Team=Heat, Amount=122.0
+2024-11-09 14:01:32 [main] INFO  org.example.User - Alice placed a bet of $124.0. New balance: $187.0
+2024-11-09 14:01:32 [main] INFO  org.example.Match - Processing bet: Type=total, Team=Celtics, Amount=124.0
+2024-11-09 14:01:32 [main] INFO  org.example.User - Alice won $290.15999999999997. New balance: $477.15999999999997
+2024-11-09 14:01:32 [main] INFO  org.example.User - Bob placed a bet of $65.0. New balance: $159.32000000000002
+2024-11-09 14:01:32 [main] INFO  org.example.Match - Processing bet: Type=winlose, Team=Celtics, Amount=65.0
+2024-11-09 14:01:32 [main] INFO  org.example.User - Charlie placed a bet of $71.0. New balance: $301.5
+2024-11-09 14:01:32 [main] INFO  org.example.Match - Processing bet: Type=handicap, Team=Warriors, Amount=71.0
+2024-11-09 14:01:32 [main] INFO  org.example.User - Pes Patron placed a bet of $125.0. New balance: $65.0
+2024-11-09 14:01:32 [main] INFO  org.example.Match - Processing bet: Type=total, Team=Celtics, Amount=125.0
+2024-11-09 14:01:32 [main] INFO  org.example.User - Alice placed a bet of $114.0. New balance: $363.15999999999997
+2024-11-09 14:01:32 [main] INFO  org.example.Match - Processing bet: Type=handicap, Team=Lakers, Amount=114.0
+2024-11-09 14:01:32 [main] INFO  org.example.User - Bob placed a bet of $125.0. New balance: $34.32000000000002
+2024-11-09 14:01:32 [main] INFO  org.example.Match - Processing bet: Type=handicap, Team=Warriors, Amount=125.0
+2024-11-09 14:01:32 [main] INFO  org.example.User - Bob won $321.25. New balance: $355.57000000000005
+2024-11-09 14:01:32 [main] INFO  org.example.User - Charlie placed a bet of $98.0. New balance: $203.5
+2024-11-09 14:01:32 [main] INFO  org.example.Match - Processing bet: Type=quarter, Team=Warriors, Amount=98.0
+2024-11-09 14:01:32 [main] INFO  org.example.User - Charlie won $262.64000000000004. New balance: $466.14000000000004
+2024-11-09 14:01:32 [main] INFO  org.example.User - Pes Patron placed a bet of $56.0. New balance: $9.0
+2024-11-09 14:01:32 [main] INFO  org.example.Match - Processing bet: Type=winlose, Team=Warriors, Amount=56.0
+2024-11-09 14:01:32 [main] INFO  org.example.User - Pes Patron won $92.96. New balance: $101.96
+2024-11-09 14:01:32 [main] INFO  org.example.User - Alice placed a bet of $84.0. New balance: $279.15999999999997
+2024-11-09 14:01:32 [main] INFO  org.example.Match - Processing bet: Type=handicap, Team=Lakers, Amount=84.0
+2024-11-09 14:01:32 [main] INFO  org.example.User - Alice won $179.76000000000002. New balance: $458.91999999999996
+2024-11-09 14:01:32 [main] INFO  org.example.User - Bob placed a bet of $55.0. New balance: $300.57000000000005
+2024-11-09 14:01:32 [main] INFO  org.example.Match - Processing bet: Type=quarter, Team=Warriors, Amount=55.0
+2024-11-09 14:01:32 [main] INFO  org.example.User - Charlie placed a bet of $56.0. New balance: $410.14000000000004
+2024-11-09 14:01:32 [main] INFO  org.example.Match - Processing bet: Type=winlose, Team=Lakers, Amount=56.0
+2024-11-09 14:01:32 [main] INFO  org.example.User - Charlie won $163.51999999999998. New balance: $573.6600000000001
+2024-11-09 14:01:32 [main] INFO  org.example.User - Pes Patron placed a bet of $81.0. New balance: $20.959999999999994
+2024-11-09 14:01:32 [main] INFO  org.example.Match - Processing bet: Type=winlose, Team=Warriors, Amount=81.0
+2024-11-09 14:01:32 [main] INFO  org.example.User - Alice placed a bet of $85.0. New balance: $373.91999999999996
+2024-11-09 14:01:32 [main] INFO  org.example.Match - Processing bet: Type=winlose, Team=Celtics, Amount=85.0
+2024-11-09 14:01:32 [main] INFO  org.example.User - Alice won $164.04999999999998. New balance: $537.9699999999999
+2024-11-09 14:01:32 [main] INFO  org.example.User - Bob placed a bet of $118.0. New balance: $182.57000000000005
+2024-11-09 14:01:32 [main] INFO  org.example.Match - Processing bet: Type=handicap, Team=Celtics, Amount=118.0
+2024-11-09 14:01:32 [main] INFO  org.example.User - Charlie placed a bet of $88.0. New balance: $485.6600000000001
+2024-11-09 14:01:32 [main] INFO  org.example.Match - Processing bet: Type=winlose, Team=Warriors, Amount=88.0
+2024-11-09 14:04:16 [main] INFO  org.example.Match - Match initialized: Heat vs Lakers
+2024-11-09 14:04:16 [main] INFO  org.example.Match - Match initialized: Heat vs Celtics
+2024-11-09 14:04:16 [main] INFO  org.example.Match - Match initialized: Warriors vs Lakers
+2024-11-09 14:04:16 [main] INFO  org.example.Match - Match initialized: Lakers vs Warriors
+2024-11-09 14:04:16 [main] INFO  org.example.Match - Match initialized: Heat vs Nets
+2024-11-09 14:04:16 [main] INFO  org.example.User - User created: Name=Alice, Balance=446.0
+2024-11-09 14:04:16 [main] INFO  org.example.User - User created: Name=Bob, Balance=376.0
+2024-11-09 14:04:16 [main] INFO  org.example.User - User created: Name=Charlie, Balance=462.0
+2024-11-09 14:04:16 [main] INFO  org.example.User - User created: Name=Pes Patron, Balance=230.0
+2024-11-09 14:04:16 [main] INFO  org.example.User - Alice placed a bet of $53.0. New balance: $393.0
+2024-11-09 14:04:16 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Heat, Amount=53.0
+2024-11-09 14:04:16 [main] INFO  org.example.User - Bob placed a bet of $81.0. New balance: $295.0
+2024-11-09 14:04:16 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Heat, Amount=81.0
+2024-11-09 14:04:16 [main] INFO  org.example.User - Charlie placed a bet of $86.0. New balance: $376.0
+2024-11-09 14:04:16 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Heat, Amount=86.0
+2024-11-09 14:04:16 [main] INFO  org.example.User - Pes Patron placed a bet of $116.0. New balance: $114.0
+2024-11-09 14:04:16 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Heat, Amount=116.0
+2024-11-09 14:04:16 [main] INFO  org.example.User - Alice placed a bet of $70.0. New balance: $323.0
+2024-11-09 14:04:16 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Heat, Amount=70.0
+2024-11-09 14:04:16 [main] INFO  org.example.User - Alice won $163.1. New balance: $486.1
+2024-11-09 14:04:16 [main] INFO  org.example.User - Bob placed a bet of $125.0. New balance: $170.0
+2024-11-09 14:04:16 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Celtics, Amount=125.0
+2024-11-09 14:04:16 [main] INFO  org.example.User - Bob won $487.5. New balance: $657.5
+2024-11-09 14:04:16 [main] INFO  org.example.User - Charlie placed a bet of $128.0. New balance: $248.0
+2024-11-09 14:04:16 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Heat, Amount=128.0
+2024-11-09 14:04:16 [main] INFO  org.example.User - Alice placed a bet of $110.0. New balance: $376.1
+2024-11-09 14:04:16 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Warriors, Amount=110.0
+2024-11-09 14:04:16 [main] INFO  org.example.User - Bob placed a bet of $82.0. New balance: $575.5
+2024-11-09 14:04:16 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Warriors, Amount=82.0
+2024-11-09 14:04:16 [main] INFO  org.example.User - Charlie placed a bet of $62.0. New balance: $186.0
+2024-11-09 14:04:16 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Lakers, Amount=62.0
+2024-11-09 14:04:16 [main] INFO  org.example.User - Pes Patron placed a bet of $108.0. New balance: $6.0
+2024-11-09 14:04:16 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Lakers, Amount=108.0
+2024-11-09 14:04:16 [main] INFO  org.example.User - Pes Patron won $273.23999999999995. New balance: $279.23999999999995
+2024-11-09 14:04:16 [main] INFO  org.example.User - Alice placed a bet of $113.0. New balance: $263.1
+2024-11-09 14:04:16 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Warriors, Amount=113.0
+2024-11-09 14:04:16 [main] INFO  org.example.User - Alice won $274.59000000000003. New balance: $537.69
+2024-11-09 14:04:16 [main] INFO  org.example.User - Bob placed a bet of $63.0. New balance: $512.5
+2024-11-09 14:04:16 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Lakers, Amount=63.0
+2024-11-09 14:04:16 [main] INFO  org.example.User - Charlie placed a bet of $90.0. New balance: $96.0
+2024-11-09 14:04:16 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Warriors, Amount=90.0
+2024-11-09 14:04:16 [main] INFO  org.example.User - Pes Patron placed a bet of $65.0. New balance: $214.23999999999995
+2024-11-09 14:04:16 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Lakers, Amount=65.0
+2024-11-09 14:04:16 [main] INFO  org.example.User - Alice placed a bet of $57.0. New balance: $480.69000000000005
+2024-11-09 14:04:16 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Heat, Amount=57.0
+2024-11-09 14:04:16 [main] INFO  org.example.User - Alice won $102.03. New balance: $582.72
+2024-11-09 14:04:16 [main] INFO  org.example.User - Bob placed a bet of $124.0. New balance: $388.5
+2024-11-09 14:04:16 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Nets, Amount=124.0
+2024-11-09 14:04:16 [main] INFO  org.example.User - Charlie placed a bet of $53.0. New balance: $43.0
+2024-11-09 14:04:16 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Heat, Amount=53.0
+2024-11-09 14:04:16 [main] INFO  org.example.User - Pes Patron placed a bet of $88.0. New balance: $126.23999999999995
+2024-11-09 14:04:16 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Nets, Amount=88.0
+2024-11-09 14:05:43 [main] INFO  org.example.Match - Match initialized: Lakers vs Nets
+2024-11-09 14:05:43 [main] INFO  org.example.Match - Match initialized: Celtics vs Warriors
+2024-11-09 14:05:43 [main] INFO  org.example.Match - Match initialized: Celtics vs Nets
+2024-11-09 14:05:43 [main] INFO  org.example.Match - Match initialized: Warriors vs Heat
+2024-11-09 14:05:43 [main] INFO  org.example.Match - Match initialized: Heat vs Celtics
+2024-11-09 14:05:43 [main] INFO  org.example.User - User created: Name=Alice, Balance=444.0
+2024-11-09 14:05:43 [main] INFO  org.example.User - User created: Name=Bob, Balance=356.0
+2024-11-09 14:05:43 [main] INFO  org.example.User - User created: Name=Charlie, Balance=293.0
+2024-11-09 14:05:43 [main] INFO  org.example.User - User created: Name=Pes Patron, Balance=132.0
+2024-11-09 14:05:43 [main] DEBUG org.example.User - Alice placed a bet of $126.0. New balance: $318.0
+2024-11-09 14:05:43 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Nets, Amount=126.0
+2024-11-09 14:05:43 [main] DEBUG org.example.User - Bob placed a bet of $82.0. New balance: $274.0
+2024-11-09 14:05:43 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Nets, Amount=82.0
+2024-11-09 14:05:43 [main] DEBUG org.example.User - Bob won $237.79999999999998. New balance: $511.79999999999995
+2024-11-09 14:05:43 [main] DEBUG org.example.User - Charlie placed a bet of $115.0. New balance: $178.0
+2024-11-09 14:05:43 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Nets, Amount=115.0
+2024-11-09 14:05:43 [main] DEBUG org.example.User - Pes Patron placed a bet of $50.0. New balance: $82.0
+2024-11-09 14:05:43 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Nets, Amount=50.0
+2024-11-09 14:05:43 [main] DEBUG org.example.User - Pes Patron won $145.0. New balance: $227.0
+2024-11-09 14:05:43 [main] DEBUG org.example.User - Alice placed a bet of $86.0. New balance: $232.0
+2024-11-09 14:05:43 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Warriors, Amount=86.0
+2024-11-09 14:05:43 [main] DEBUG org.example.User - Alice won $209.84. New balance: $441.84000000000003
+2024-11-09 14:05:43 [main] DEBUG org.example.User - Bob placed a bet of $97.0. New balance: $414.79999999999995
+2024-11-09 14:05:43 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Celtics, Amount=97.0
+2024-11-09 14:05:43 [main] DEBUG org.example.User - Charlie placed a bet of $74.0. New balance: $104.0
+2024-11-09 14:05:43 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Celtics, Amount=74.0
+2024-11-09 14:05:43 [main] DEBUG org.example.User - Pes Patron placed a bet of $50.0. New balance: $177.0
+2024-11-09 14:05:43 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Warriors, Amount=50.0
+2024-11-09 14:05:43 [main] DEBUG org.example.User - Alice placed a bet of $66.0. New balance: $375.84000000000003
+2024-11-09 14:05:43 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Celtics, Amount=66.0
+2024-11-09 14:05:43 [main] DEBUG org.example.User - Bob placed a bet of $124.0. New balance: $290.79999999999995
+2024-11-09 14:05:43 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Nets, Amount=124.0
+2024-11-09 14:05:43 [main] DEBUG org.example.User - Pes Patron placed a bet of $80.0. New balance: $97.0
+2024-11-09 14:05:43 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Nets, Amount=80.0
+2024-11-09 14:05:43 [main] DEBUG org.example.User - Alice placed a bet of $85.0. New balance: $290.84000000000003
+2024-11-09 14:05:43 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Heat, Amount=85.0
+2024-11-09 14:05:43 [main] DEBUG org.example.User - Bob placed a bet of $108.0. New balance: $182.79999999999995
+2024-11-09 14:05:43 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Warriors, Amount=108.0
+2024-11-09 14:05:43 [main] DEBUG org.example.User - Alice placed a bet of $113.0. New balance: $177.84000000000003
+2024-11-09 14:05:43 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Celtics, Amount=113.0
+2024-11-09 14:05:43 [main] DEBUG org.example.User - Bob placed a bet of $118.0. New balance: $64.79999999999995
+2024-11-09 14:05:43 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Celtics, Amount=118.0
+2024-11-09 14:05:43 [main] DEBUG org.example.User - Charlie placed a bet of $78.0. New balance: $26.0
+2024-11-09 14:05:43 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Celtics, Amount=78.0
+2024-11-09 14:12:31 [main] INFO  org.example.Match - Match initialized: Celtics vs Heat
+2024-11-09 14:12:31 [main] INFO  org.example.Match - Match initialized: Warriors vs Lakers
+2024-11-09 14:12:31 [main] INFO  org.example.Match - Match initialized: Lakers vs Warriors
+2024-11-09 14:12:31 [main] INFO  org.example.Match - Match initialized: Heat vs Warriors
+2024-11-09 14:12:31 [main] INFO  org.example.Match - Match initialized: Nets vs Celtics
+2024-11-09 14:12:31 [main] INFO  org.example.User - User created: Name=Alice, Balance=453.0
+2024-11-09 14:12:31 [main] INFO  org.example.User - User created: Name=Bob, Balance=161.0
+2024-11-09 14:12:31 [main] INFO  org.example.User - User created: Name=Charlie, Balance=174.0
+2024-11-09 14:12:31 [main] INFO  org.example.User - User created: Name=Pes Patron, Balance=313.0
+2024-11-09 14:12:31 [main] DEBUG org.example.User - Alice placed a bet of $66.0. New balance: $387.0
+2024-11-09 14:12:31 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Celtics, Amount=66.0
+2024-11-09 14:12:31 [main] DEBUG org.example.User - Bob placed a bet of $96.0. New balance: $65.0
+2024-11-09 14:12:31 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Heat, Amount=96.0
+2024-11-09 14:12:31 [main] DEBUG org.example.User - Bob won $175.68. New balance: $240.68
+2024-11-09 14:12:31 [main] DEBUG org.example.User - Charlie placed a bet of $123.0. New balance: $51.0
+2024-11-09 14:12:31 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Celtics, Amount=123.0
+2024-11-09 14:12:31 [main] DEBUG org.example.User - Charlie won $354.24. New balance: $405.24
+2024-11-09 14:12:31 [main] DEBUG org.example.User - Pes Patron placed a bet of $69.0. New balance: $244.0
+2024-11-09 14:12:31 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Celtics, Amount=69.0
+2024-11-09 14:12:31 [main] DEBUG org.example.User - Alice placed a bet of $82.0. New balance: $305.0
+2024-11-09 14:12:31 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Warriors, Amount=82.0
+2024-11-09 14:12:31 [main] DEBUG org.example.User - Bob placed a bet of $128.0. New balance: $112.68
+2024-11-09 14:12:31 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Lakers, Amount=128.0
+2024-11-09 14:12:31 [main] DEBUG org.example.User - Charlie placed a bet of $129.0. New balance: $276.24
+2024-11-09 14:12:31 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Lakers, Amount=129.0
+2024-11-09 14:12:31 [main] DEBUG org.example.User - Charlie won $370.23. New balance: $646.47
+2024-11-09 14:12:31 [main] DEBUG org.example.User - Pes Patron placed a bet of $75.0. New balance: $169.0
+2024-11-09 14:12:31 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Lakers, Amount=75.0
+2024-11-09 14:12:31 [main] DEBUG org.example.User - Pes Patron won $243.00000000000003. New balance: $412.0
+2024-11-09 14:12:31 [main] DEBUG org.example.User - Alice placed a bet of $51.0. New balance: $254.0
+2024-11-09 14:12:31 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Warriors, Amount=51.0
+2024-11-09 14:12:31 [main] DEBUG org.example.User - Charlie placed a bet of $107.0. New balance: $539.47
+2024-11-09 14:12:31 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Warriors, Amount=107.0
+2024-11-09 14:12:31 [main] DEBUG org.example.User - Pes Patron placed a bet of $82.0. New balance: $330.0
+2024-11-09 14:12:31 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Lakers, Amount=82.0
+2024-11-09 14:12:31 [main] DEBUG org.example.User - Pes Patron won $126.28. New balance: $456.28
+2024-11-09 14:12:31 [main] DEBUG org.example.User - Alice placed a bet of $121.0. New balance: $133.0
+2024-11-09 14:12:31 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Warriors, Amount=121.0
+2024-11-09 14:12:31 [main] DEBUG org.example.User - Bob placed a bet of $53.0. New balance: $59.68000000000001
+2024-11-09 14:12:31 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Warriors, Amount=53.0
+2024-11-09 14:12:31 [main] DEBUG org.example.User - Bob won $140.45. New balance: $200.13
+2024-11-09 14:12:31 [main] DEBUG org.example.User - Charlie placed a bet of $86.0. New balance: $453.47
+2024-11-09 14:12:31 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Warriors, Amount=86.0
+2024-11-09 14:12:31 [main] DEBUG org.example.User - Pes Patron placed a bet of $108.0. New balance: $348.28
+2024-11-09 14:12:31 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Warriors, Amount=108.0
+2024-11-09 14:12:31 [main] DEBUG org.example.User - Alice placed a bet of $80.0. New balance: $53.0
+2024-11-09 14:12:31 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Nets, Amount=80.0
+2024-11-09 14:12:31 [main] DEBUG org.example.User - Bob placed a bet of $92.0. New balance: $108.13
+2024-11-09 14:12:31 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Celtics, Amount=92.0
+2024-11-09 14:12:31 [main] DEBUG org.example.User - Charlie placed a bet of $74.0. New balance: $379.47
+2024-11-09 14:12:31 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Celtics, Amount=74.0
+2024-11-09 14:12:31 [main] DEBUG org.example.User - Pes Patron placed a bet of $84.0. New balance: $264.28
+2024-11-09 14:12:31 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Celtics, Amount=84.0
+2024-11-09 14:13:08 [main] INFO  org.example.Match - Match initialized: Lakers vs Heat
+2024-11-09 14:13:08 [main] INFO  org.example.Match - Match initialized: Nets vs Warriors
+2024-11-09 14:13:08 [main] INFO  org.example.Match - Match initialized: Heat vs Celtics
+2024-11-09 14:13:08 [main] INFO  org.example.Match - Match initialized: Lakers vs Warriors
+2024-11-09 14:13:08 [main] INFO  org.example.Match - Match initialized: Heat vs Celtics
+2024-11-09 14:13:08 [main] INFO  org.example.User - User created: Name=Alice, Balance=395.0
+2024-11-09 14:13:08 [main] INFO  org.example.User - User created: Name=Bob, Balance=458.0
+2024-11-09 14:13:08 [main] INFO  org.example.User - User created: Name=Charlie, Balance=446.0
+2024-11-09 14:13:08 [main] INFO  org.example.User - User created: Name=Pes Patron, Balance=361.0
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Alice placed a bet of $113.0. New balance: $282.0
+2024-11-09 14:13:08 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Heat, Amount=113.0
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Alice won $271.2. New balance: $553.2
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Bob placed a bet of $107.0. New balance: $351.0
+2024-11-09 14:13:08 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Lakers, Amount=107.0
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Charlie placed a bet of $62.0. New balance: $384.0
+2024-11-09 14:13:08 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Lakers, Amount=62.0
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Pes Patron placed a bet of $66.0. New balance: $295.0
+2024-11-09 14:13:08 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Lakers, Amount=66.0
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Alice placed a bet of $97.0. New balance: $456.20000000000005
+2024-11-09 14:13:08 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Nets, Amount=97.0
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Alice won $189.15. New balance: $645.35
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Bob placed a bet of $124.0. New balance: $227.0
+2024-11-09 14:13:08 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Warriors, Amount=124.0
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Charlie placed a bet of $110.0. New balance: $274.0
+2024-11-09 14:13:08 [main] WARN  org.example.Match - Processing bet: Type=lox, Team=Warriors, Amount=110.0
+2024-11-09 14:13:08 [main] ERROR org.example.Match - Invalid bet type: lox
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Charlie won $110.0. New balance: $384.0
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Pes Patron placed a bet of $77.0. New balance: $218.0
+2024-11-09 14:13:08 [main] WARN  org.example.Match - Processing bet: Type=lox, Team=Warriors, Amount=77.0
+2024-11-09 14:13:08 [main] ERROR org.example.Match - Invalid bet type: lox
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Pes Patron won $77.0. New balance: $295.0
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Alice placed a bet of $97.0. New balance: $548.35
+2024-11-09 14:13:08 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Celtics, Amount=97.0
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Alice won $224.07. New balance: $772.4200000000001
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Bob placed a bet of $57.0. New balance: $170.0
+2024-11-09 14:13:08 [main] WARN  org.example.Match - Processing bet: Type=lox, Team=Heat, Amount=57.0
+2024-11-09 14:13:08 [main] ERROR org.example.Match - Invalid bet type: lox
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Bob won $57.0. New balance: $227.0
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Charlie placed a bet of $116.0. New balance: $268.0
+2024-11-09 14:13:08 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Celtics, Amount=116.0
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Pes Patron placed a bet of $108.0. New balance: $187.0
+2024-11-09 14:13:08 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Celtics, Amount=108.0
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Pes Patron won $260.28000000000003. New balance: $447.28000000000003
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Alice placed a bet of $72.0. New balance: $700.4200000000001
+2024-11-09 14:13:08 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Warriors, Amount=72.0
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Bob placed a bet of $129.0. New balance: $98.0
+2024-11-09 14:13:08 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Lakers, Amount=129.0
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Charlie placed a bet of $129.0. New balance: $139.0
+2024-11-09 14:13:08 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Warriors, Amount=129.0
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Pes Patron placed a bet of $87.0. New balance: $360.28000000000003
+2024-11-09 14:13:08 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Lakers, Amount=87.0
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Pes Patron won $150.51. New balance: $510.79
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Alice placed a bet of $72.0. New balance: $628.4200000000001
+2024-11-09 14:13:08 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Celtics, Amount=72.0
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Charlie placed a bet of $105.0. New balance: $34.0
+2024-11-09 14:13:08 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Celtics, Amount=105.0
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Pes Patron placed a bet of $115.0. New balance: $395.79
+2024-11-09 14:13:08 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Heat, Amount=115.0
+2024-11-09 14:13:08 [main] DEBUG org.example.User - Pes Patron won $205.85. New balance: $601.64
+2024-11-09 14:14:42 [main] INFO  org.example.Match - Match initialized: Nets vs Lakers
+2024-11-09 14:14:42 [main] INFO  org.example.Match - Match initialized: Heat vs Celtics
+2024-11-09 14:14:42 [main] INFO  org.example.Match - Match initialized: Warriors vs Heat
+2024-11-09 14:14:42 [main] INFO  org.example.Match - Match initialized: Lakers vs Heat
+2024-11-09 14:14:42 [main] INFO  org.example.Match - Match initialized: Warriors vs Heat
+2024-11-09 14:14:42 [main] INFO  org.example.User - User created: Name=Alice, Balance=427.0
+2024-11-09 14:14:42 [main] INFO  org.example.User - User created: Name=Bob, Balance=122.0
+2024-11-09 14:14:42 [main] INFO  org.example.User - User created: Name=Charlie, Balance=386.0
+2024-11-09 14:14:42 [main] INFO  org.example.User - User created: Name=Pes Patron, Balance=473.0
+2024-11-09 14:14:42 [main] DEBUG org.example.User - Alice placed a bet of $108.0. New balance: $319.0
+2024-11-09 14:14:42 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Nets, Amount=108.0
+2024-11-09 14:14:42 [main] DEBUG org.example.User - Alice won $210.6. New balance: $529.6
+2024-11-09 14:14:42 [main] DEBUG org.example.User - Bob placed a bet of $64.0. New balance: $58.0
+2024-11-09 14:14:42 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Nets, Amount=64.0
+2024-11-09 14:14:42 [main] DEBUG org.example.User - Charlie placed a bet of $95.0. New balance: $291.0
+2024-11-09 14:14:42 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Nets, Amount=95.0
+2024-11-09 14:14:42 [main] DEBUG org.example.User - Charlie won $185.25. New balance: $476.25
+2024-11-09 14:14:42 [main] DEBUG org.example.User - Pes Patron placed a bet of $64.0. New balance: $409.0
+2024-11-09 14:14:42 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Lakers, Amount=64.0
+2024-11-09 14:14:42 [main] DEBUG org.example.User - Alice placed a bet of $107.0. New balance: $422.6
+2024-11-09 14:14:42 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Celtics, Amount=107.0
+2024-11-09 14:14:42 [main] DEBUG org.example.User - Alice won $341.33. New balance: $763.9300000000001
+2024-11-09 14:14:42 [main] DEBUG org.example.User - Charlie placed a bet of $90.0. New balance: $386.25
+2024-11-09 14:14:42 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Heat, Amount=90.0
+2024-11-09 14:14:42 [main] DEBUG org.example.User - Pes Patron placed a bet of $70.0. New balance: $339.0
+2024-11-09 14:14:42 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Celtics, Amount=70.0
+2024-11-09 14:14:42 [main] DEBUG org.example.User - Pes Patron won $108.5. New balance: $447.5
+2024-11-09 14:14:42 [main] DEBUG org.example.User - Alice placed a bet of $55.0. New balance: $708.9300000000001
+2024-11-09 14:14:42 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Warriors, Amount=55.0
+2024-11-09 14:14:42 [main] DEBUG org.example.User - Charlie placed a bet of $60.0. New balance: $326.25
+2024-11-09 14:14:42 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Heat, Amount=60.0
+2024-11-09 14:14:42 [main] DEBUG org.example.User - Pes Patron placed a bet of $73.0. New balance: $374.5
+2024-11-09 14:14:42 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Heat, Amount=73.0
+2024-11-09 14:14:42 [main] DEBUG org.example.User - Pes Patron won $198.56. New balance: $573.06
+2024-11-09 14:14:42 [main] DEBUG org.example.User - Alice placed a bet of $79.0. New balance: $629.9300000000001
+2024-11-09 14:14:42 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Heat, Amount=79.0
+2024-11-09 14:14:42 [main] DEBUG org.example.User - Charlie placed a bet of $76.0. New balance: $250.25
+2024-11-09 14:14:42 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Heat, Amount=76.0
+2024-11-09 14:14:42 [main] DEBUG org.example.User - Charlie won $161.12. New balance: $411.37
+2024-11-09 14:14:42 [main] DEBUG org.example.User - Pes Patron placed a bet of $55.0. New balance: $518.06
+2024-11-09 14:14:42 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Lakers, Amount=55.0
+2024-11-09 14:14:42 [main] DEBUG org.example.User - Pes Patron won $140.8. New balance: $658.8599999999999
+2024-11-09 14:14:42 [main] DEBUG org.example.User - Alice placed a bet of $104.0. New balance: $525.9300000000001
+2024-11-09 14:14:42 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Heat, Amount=104.0
+2024-11-09 14:14:42 [main] DEBUG org.example.User - Alice won $276.64. New balance: $802.57
+2024-11-09 14:14:42 [main] DEBUG org.example.User - Charlie placed a bet of $85.0. New balance: $326.37
+2024-11-09 14:14:42 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Heat, Amount=85.0
+2024-11-09 14:14:42 [main] DEBUG org.example.User - Pes Patron placed a bet of $84.0. New balance: $574.8599999999999
+2024-11-09 14:14:42 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Heat, Amount=84.0
+2024-11-09 14:53:44 [main] INFO  org.example.BettingAgency - Starting Betting Agency simulation...
+2024-11-09 14:53:44 [main] INFO  org.example.Match - Match initialized: Warriors vs Nets
+2024-11-09 14:53:44 [main] INFO  org.example.Match - Match initialized: Warriors vs Lakers
+2024-11-09 14:53:44 [main] INFO  org.example.Match - Match initialized: Heat vs Celtics
+2024-11-09 14:53:44 [main] INFO  org.example.Match - Match initialized: Warriors vs Celtics
+2024-11-09 14:53:44 [main] INFO  org.example.Match - Match initialized: Heat vs Celtics
+2024-11-09 14:53:44 [main] INFO  org.example.User - User created: Name=Alice, Balance=197.0
+2024-11-09 14:53:44 [main] INFO  org.example.User - User created: Name=Bob, Balance=434.0
+2024-11-09 14:53:44 [main] INFO  org.example.User - User created: Name=Charlie, Balance=145.0
+2024-11-09 14:53:44 [main] INFO  org.example.User - User created: Name=Pes Patron, Balance=479.0
+2024-11-09 14:53:44 [main] INFO  org.example.BettingAgency - Processing match: Match: Warriors vs Nets
+Final Score: Warriors 113 - 123 Nets
+Quarter 1: 27 - 33
+Quarter 2: 26 - 34
+Quarter 3: 28 - 29
+Quarter 4: 32 - 27
+
+Win/Lose: Warriors Odds: 2.53 (L), Nets Odds: 2.24 (W)
+
+Total Bets:
+Total 1 (+231): 1,97 (W)
+Total 2 (+242): 1,62 (L)
+Total 3 (+234): 2,05 (W)
+Total 4 (+252): 2,61 (L)
+Total 5 (+222): 2,66 (W)
+
+Handicap Bets for Warriors:
+Handicap Odds 1(+2 on Warriors win)(L): 2,27
+Handicap Odds 2(+5 on Warriors win)(L): 2,84
+Handicap Odds 3(+8 on Warriors win)(L): 2,94
+Handicap Odds 4(+12 on Warriors win)(L): 3,70
+Handicap Odds 5(+16 on Warriors win)(L): 3,90
+
+Handicap Bets for Nets:
+Handicap Odds 1(+2 on Nets win)(W): 2,74
+Handicap Odds 2(+4 on Nets win)(W): 2,24
+Handicap Odds 3(+7 on Nets win)(W): 2,03
+Handicap Odds 4(+11 on Nets win)(L): 1,81
+Handicap Odds 5(+19 on Nets win)(L): 2,74
+
+Quarter Bets:
+Quarter 1: Warriors 2,48 (L) - Nets 2,56 (W)
+Quarter 2: Warriors 1,59 (L) - Nets 2,64 (W)
+Quarter 3: Warriors 1,85 (L) - Nets 2,77 (W)
+Quarter 4: Warriors 2,64 (W) - Nets 2,05 (L)
+
+2024-11-09 14:53:44 [main] DEBUG org.example.User - Alice placed a bet of $117.0. New balance: $80.0
+2024-11-09 14:53:44 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Warriors, Amount=117.0
+2024-11-09 14:53:44 [main] INFO  org.example.BettingAgency - Alice lost $117.0 with bet type winlose
+2024-11-09 14:53:44 [main] DEBUG org.example.User - Bob placed a bet of $117.0. New balance: $317.0
+2024-11-09 14:53:44 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Nets, Amount=117.0
+2024-11-09 14:53:44 [main] DEBUG org.example.User - Bob won $237.51. New balance: $554.51
+2024-11-09 14:53:44 [main] INFO  org.example.BettingAgency - Bob won $237.51 with bet type handicap
+2024-11-09 14:53:44 [main] DEBUG org.example.User - Charlie placed a bet of $54.0. New balance: $91.0
+2024-11-09 14:53:44 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Nets, Amount=54.0
+2024-11-09 14:53:44 [main] INFO  org.example.BettingAgency - Charlie lost $54.0 with bet type quarter
+2024-11-09 14:53:44 [main] DEBUG org.example.User - Pes Patron placed a bet of $121.0. New balance: $358.0
+2024-11-09 14:53:44 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Warriors, Amount=121.0
+2024-11-09 14:53:44 [main] DEBUG org.example.User - Pes Patron won $248.04999999999998. New balance: $606.05
+2024-11-09 14:53:44 [main] INFO  org.example.BettingAgency - Pes Patron won $248.04999999999998 with bet type total
+2024-11-09 14:53:44 [main] INFO  org.example.BettingAgency - Processing match: Match: Warriors vs Lakers
+Final Score: Warriors 121 - 131 Lakers
+Quarter 1: 31 - 29
+Quarter 2: 33 - 32
+Quarter 3: 27 - 35
+Quarter 4: 30 - 35
+
+Win/Lose: Warriors Odds: 2.73 (L), Lakers Odds: 1.51 (W)
+
+Total Bets:
+Total 1 (+268): 2,55 (L)
+Total 2 (+259): 2,98 (L)
+Total 3 (+251): 1,96 (W)
+Total 4 (+245): 2,23 (W)
+Total 5 (+238): 1,87 (W)
+
+Handicap Bets for Warriors:
+Handicap Odds 1(+1 on Warriors win)(L): 2,53
+Handicap Odds 2(+5 on Warriors win)(L): 2,85
+Handicap Odds 3(+8 on Warriors win)(L): 3,14
+Handicap Odds 4(+14 on Warriors win)(L): 3,48
+Handicap Odds 5(+19 on Warriors win)(L): 3,91
+
+Handicap Bets for Lakers:
+Handicap Odds 1(+2 on Lakers win)(W): 2,42
+Handicap Odds 2(+4 on Lakers win)(W): 2,40
+Handicap Odds 3(+7 on Lakers win)(W): 2,15
+Handicap Odds 4(+14 on Lakers win)(L): 2,14
+Handicap Odds 5(+17 on Lakers win)(L): 2,30
+
+Quarter Bets:
+Quarter 1: Warriors 2,20 (W) - Lakers 2,34 (L)
+Quarter 2: Warriors 2,65 (W) - Lakers 1,95 (L)
+Quarter 3: Warriors 2,62 (L) - Lakers 2,59 (W)
+Quarter 4: Warriors 2,27 (L) - Lakers 2,58 (W)
+
+2024-11-09 14:53:44 [main] DEBUG org.example.User - Alice placed a bet of $61.0. New balance: $19.0
+2024-11-09 14:53:44 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Warriors, Amount=61.0
+2024-11-09 14:53:44 [main] INFO  org.example.BettingAgency - Alice lost $61.0 with bet type winlose
+2024-11-09 14:53:44 [main] DEBUG org.example.User - Bob placed a bet of $119.0. New balance: $435.51
+2024-11-09 14:53:44 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Warriors, Amount=119.0
+2024-11-09 14:53:44 [main] INFO  org.example.BettingAgency - Bob lost $119.0 with bet type winlose
+2024-11-09 14:53:44 [main] DEBUG org.example.User - Charlie placed a bet of $54.0. New balance: $37.0
+2024-11-09 14:53:44 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Warriors, Amount=54.0
+2024-11-09 14:53:44 [main] INFO  org.example.BettingAgency - Charlie lost $54.0 with bet type winlose
+2024-11-09 14:53:44 [main] DEBUG org.example.User - Pes Patron placed a bet of $88.0. New balance: $518.05
+2024-11-09 14:53:44 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Lakers, Amount=88.0
+2024-11-09 14:53:44 [main] DEBUG org.example.User - Pes Patron won $132.88. New balance: $650.93
+2024-11-09 14:53:44 [main] INFO  org.example.BettingAgency - Pes Patron won $132.88 with bet type winlose
+2024-11-09 14:53:44 [main] INFO  org.example.BettingAgency - Processing match: Match: Heat vs Celtics
+Final Score: Heat 121 - 115 Celtics
+Quarter 1: 34 - 26
+Quarter 2: 33 - 34
+Quarter 3: 27 - 30
+Quarter 4: 27 - 25
+
+Win/Lose: Heat Odds: 2.79 (W), Celtics Odds: 2.62 (L)
+
+Total Bets:
+Total 1 (+234): 1,82 (W)
+Total 2 (+252): 1,72 (L)
+Total 3 (+229): 1,92 (W)
+Total 4 (+243): 2,04 (L)
+Total 5 (+222): 2,04 (W)
+
+Handicap Bets for Heat:
+Handicap Odds 1(+2 on Heat win)(W): 2,23
+Handicap Odds 2(+5 on Heat win)(W): 2,08
+Handicap Odds 3(+8 on Heat win)(L): 1,84
+Handicap Odds 4(+13 on Heat win)(L): 2,40
+Handicap Odds 5(+18 on Heat win)(L): 3,19
+
+Handicap Bets for Celtics:
+Handicap Odds 1(+2 on Celtics win)(L): 2,21
+Handicap Odds 2(+4 on Celtics win)(L): 2,88
+Handicap Odds 3(+8 on Celtics win)(L): 2,90
+Handicap Odds 4(+14 on Celtics win)(L): 3,50
+Handicap Odds 5(+19 on Celtics win)(L): 4,26
+
+Quarter Bets:
+Quarter 1: Heat 2,99 (W) - Celtics 1,90 (L)
+Quarter 2: Heat 2,77 (L) - Celtics 2,89 (W)
+Quarter 3: Heat 2,73 (L) - Celtics 2,25 (W)
+Quarter 4: Heat 1,89 (W) - Celtics 1,79 (L)
+
+2024-11-09 14:53:44 [main] WARN  org.example.BettingAgency - Alice cannot place bet of $74.0. Insufficient balance: $19.0
+2024-11-09 14:53:44 [main] DEBUG org.example.User - Bob placed a bet of $97.0. New balance: $338.51
+2024-11-09 14:53:44 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Celtics, Amount=97.0
+2024-11-09 14:53:44 [main] INFO  org.example.BettingAgency - Bob lost $97.0 with bet type handicap
+2024-11-09 14:53:44 [main] WARN  org.example.BettingAgency - Charlie cannot place bet of $67.0. Insufficient balance: $37.0
+2024-11-09 14:53:44 [main] DEBUG org.example.User - Pes Patron placed a bet of $109.0. New balance: $541.93
+2024-11-09 14:53:44 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Celtics, Amount=109.0
+2024-11-09 14:53:44 [main] DEBUG org.example.User - Pes Patron won $245.25. New balance: $787.18
+2024-11-09 14:53:44 [main] INFO  org.example.BettingAgency - Pes Patron won $245.25 with bet type quarter
+2024-11-09 14:53:44 [main] INFO  org.example.BettingAgency - Processing match: Match: Warriors vs Celtics
+Final Score: Warriors 106 - 97 Celtics
+Quarter 1: 30 - 26
+Quarter 2: 21 - 21
+Quarter 3: 28 - 30
+Quarter 4: 27 - 20
+
+Win/Lose: Warriors Odds: 1.96 (W), Celtics Odds: 2.05 (L)
+
+Total Bets:
+Total 1 (+201): 1,72 (W)
+Total 2 (+197): 2,52 (W)
+Total 3 (+190): 2,46 (W)
+Total 4 (+209): 2,61 (L)
+Total 5 (+218): 1,74 (L)
+
+Handicap Bets for Warriors:
+Handicap Odds 1(+1 on Warriors win)(W): 2,46
+Handicap Odds 2(+5 on Warriors win)(W): 1,96
+Handicap Odds 3(+7 on Warriors win)(W): 1,82
+Handicap Odds 4(+11 on Warriors win)(L): 1,93
+Handicap Odds 5(+16 on Warriors win)(L): 2,44
+
+Handicap Bets for Celtics:
+Handicap Odds 1(+2 on Celtics win)(L): 2,44
+Handicap Odds 2(+4 on Celtics win)(L): 2,42
+Handicap Odds 3(+7 on Celtics win)(L): 2,71
+Handicap Odds 4(+14 on Celtics win)(L): 3,63
+Handicap Odds 5(+16 on Celtics win)(L): 3,63
+
+Quarter Bets:
+Quarter 1: Warriors 2,23 (W) - Celtics 2,73 (L)
+Quarter 2: Warriors 1,87 (L) - Celtics 2,36 (L)
+Quarter 3: Warriors 1,63 (L) - Celtics 2,21 (W)
+Quarter 4: Warriors 2,27 (W) - Celtics 2,22 (L)
+
+2024-11-09 14:53:44 [main] WARN  org.example.BettingAgency - Alice cannot place bet of $117.0. Insufficient balance: $19.0
+2024-11-09 14:53:44 [main] DEBUG org.example.User - Bob placed a bet of $53.0. New balance: $285.51
+2024-11-09 14:53:44 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Celtics, Amount=53.0
+2024-11-09 14:53:44 [main] INFO  org.example.BettingAgency - Bob lost $53.0 with bet type winlose
+2024-11-09 14:53:44 [main] WARN  org.example.BettingAgency - Charlie cannot place bet of $55.0. Insufficient balance: $37.0
+2024-11-09 14:53:44 [main] DEBUG org.example.User - Pes Patron placed a bet of $53.0. New balance: $734.18
+2024-11-09 14:53:44 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Warriors, Amount=53.0
+2024-11-09 14:53:44 [main] INFO  org.example.BettingAgency - Pes Patron lost $53.0 with bet type total
+2024-11-09 14:53:44 [main] INFO  org.example.BettingAgency - Processing match: Match: Heat vs Celtics
+Final Score: Heat 97 - 106 Celtics
+Quarter 1: 28 - 22
+Quarter 2: 20 - 25
+Quarter 3: 28 - 24
+Quarter 4: 21 - 35
+
+Win/Lose: Heat Odds: 1.86 (L), Celtics Odds: 2.02 (W)
+
+Total Bets:
+Total 1 (+197): 2,90 (W)
+Total 2 (+190): 1,59 (W)
+Total 3 (+219): 2,63 (L)
+Total 4 (+210): 1,58 (L)
+Total 5 (+201): 2,38 (W)
+
+Handicap Bets for Heat:
+Handicap Odds 1(+1 on Heat win)(L): 2,50
+Handicap Odds 2(+5 on Heat win)(L): 2,57
+Handicap Odds 3(+8 on Heat win)(L): 3,10
+Handicap Odds 4(+11 on Heat win)(L): 3,40
+Handicap Odds 5(+18 on Heat win)(L): 4,20
+
+Handicap Bets for Celtics:
+Handicap Odds 1(+2 on Celtics win)(W): 2,62
+Handicap Odds 2(+4 on Celtics win)(W): 2,42
+Handicap Odds 3(+8 on Celtics win)(W): 1,76
+Handicap Odds 4(+12 on Celtics win)(L): 1,91
+Handicap Odds 5(+18 on Celtics win)(L): 2,46
+
+Quarter Bets:
+Quarter 1: Heat 2,29 (W) - Celtics 1,92 (L)
+Quarter 2: Heat 2,53 (L) - Celtics 2,27 (W)
+Quarter 3: Heat 2,31 (W) - Celtics 1,52 (L)
+Quarter 4: Heat 2,76 (L) - Celtics 2,88 (W)
+
+2024-11-09 14:53:44 [main] WARN  org.example.BettingAgency - Alice cannot place bet of $125.0. Insufficient balance: $19.0
+2024-11-09 14:53:44 [main] DEBUG org.example.User - Bob placed a bet of $53.0. New balance: $232.51
+2024-11-09 14:53:44 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Celtics, Amount=53.0
+2024-11-09 14:53:44 [main] INFO  org.example.BettingAgency - Bob lost $53.0 with bet type handicap
+2024-11-09 14:53:44 [main] WARN  org.example.BettingAgency - Charlie cannot place bet of $61.0. Insufficient balance: $37.0
+2024-11-09 14:53:44 [main] DEBUG org.example.User - Pes Patron placed a bet of $93.0. New balance: $641.18
+2024-11-09 14:53:44 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Heat, Amount=93.0
+2024-11-09 14:53:44 [main] INFO  org.example.BettingAgency - Pes Patron lost $93.0 with bet type handicap
+2024-11-09 14:53:44 [main] INFO  org.example.BettingAgency - Final agency profit: $325.31000000000006
+2024-11-09 14:57:41 [main] INFO  org.example.BettingAgency - Starting Betting Agency simulation...
+2024-11-09 14:57:41 [main] INFO  org.example.Match - Match initialized: Heat vs Nets
+2024-11-09 14:57:41 [main] INFO  org.example.Match - Match initialized: Warriors vs Lakers
+2024-11-09 14:57:41 [main] INFO  org.example.Match - Match initialized: Nets vs Celtics
+2024-11-09 14:57:41 [main] INFO  org.example.Match - Match initialized: Warriors vs Heat
+2024-11-09 14:57:41 [main] INFO  org.example.Match - Match initialized: Celtics vs Warriors
+2024-11-09 14:57:41 [main] INFO  org.example.User - User created: Name=Alice, Balance=159.0
+2024-11-09 14:57:41 [main] INFO  org.example.User - User created: Name=Bob, Balance=172.0
+2024-11-09 14:57:41 [main] INFO  org.example.User - User created: Name=Charlie, Balance=163.0
+2024-11-09 14:57:41 [main] INFO  org.example.User - User created: Name=Pes Patron, Balance=256.0
+2024-11-09 14:57:41 [main] INFO  org.example.BettingAgency - Processing match: Match: Heat vs Nets
+Final Score: Heat 97 - 104 Nets
+Quarter 1: 22 - 32
+Quarter 2: 29 - 27
+Quarter 3: 20 - 21
+Quarter 4: 26 - 24
+
+Win/Lose: Heat Odds: 2.93 (L), Nets Odds: 2.99 (W)
+
+Total Bets:
+Total 1 (+208): 2,74 (L)
+Total 2 (+187): 2,19 (W)
+Total 3 (+196): 2,90 (W)
+Total 4 (+217): 2,50 (L)
+Total 5 (+199): 2,49 (W)
+
+Handicap Bets for Heat:
+Handicap Odds 1(+2 on Heat win)(L): 2,49
+Handicap Odds 2(+5 on Heat win)(L): 2,79
+Handicap Odds 3(+8 on Heat win)(L): 3,26
+Handicap Odds 4(+12 on Heat win)(L): 3,53
+Handicap Odds 5(+19 on Heat win)(L): 3,91
+
+Handicap Bets for Nets:
+Handicap Odds 1(+2 on Nets win)(W): 2,09
+Handicap Odds 2(+5 on Nets win)(W): 1,82
+Handicap Odds 3(+7 on Nets win)(W): 1,76
+Handicap Odds 4(+10 on Nets win)(L): 2,26
+Handicap Odds 5(+17 on Nets win)(L): 2,66
+
+Quarter Bets:
+Quarter 1: Heat 2,15 (L) - Nets 1,70 (W)
+Quarter 2: Heat 2,24 (W) - Nets 2,46 (L)
+Quarter 3: Heat 1,73 (L) - Nets 1,99 (W)
+Quarter 4: Heat 2,45 (W) - Nets 1,77 (L)
+
+2024-11-09 14:57:41 [main] DEBUG org.example.User - Alice placed a bet of $81.0. New balance: $78.0
+2024-11-09 14:57:41 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Heat, Amount=81.0
+2024-11-09 14:57:41 [main] INFO  org.example.BettingAgency - Alice lost $81.0 with bet type handicap
+2024-11-09 14:57:41 [main] DEBUG org.example.User - Bob placed a bet of $101.0. New balance: $71.0
+2024-11-09 14:57:41 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Nets, Amount=101.0
+2024-11-09 14:57:41 [main] DEBUG org.example.User - Bob won $251.49. New balance: $322.49
+2024-11-09 14:57:41 [main] INFO  org.example.BettingAgency - Bob won $251.49 with bet type total
+2024-11-09 14:57:41 [main] DEBUG org.example.User - Charlie placed a bet of $111.0. New balance: $52.0
+2024-11-09 14:57:41 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Nets, Amount=111.0
+2024-11-09 14:57:41 [main] DEBUG org.example.User - Charlie won $331.89000000000004. New balance: $383.89000000000004
+2024-11-09 14:57:41 [main] INFO  org.example.BettingAgency - Charlie won $331.89000000000004 with bet type winlose
+2024-11-09 14:57:41 [main] DEBUG org.example.User - Pes Patron placed a bet of $70.0. New balance: $186.0
+2024-11-09 14:57:41 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Heat, Amount=70.0
+2024-11-09 14:57:41 [main] DEBUG org.example.User - Pes Patron won $153.29999999999998. New balance: $339.29999999999995
+2024-11-09 14:57:41 [main] INFO  org.example.BettingAgency - Pes Patron won $153.29999999999998 with bet type total
+2024-11-09 14:57:41 [main] INFO  org.example.BettingAgency - Processing match: Match: Warriors vs Lakers
+Final Score: Warriors 117 - 114 Lakers
+Quarter 1: 35 - 33
+Quarter 2: 30 - 26
+Quarter 3: 25 - 25
+Quarter 4: 27 - 30
+
+Win/Lose: Warriors Odds: 2.51 (W), Lakers Odds: 2.76 (L)
+
+Total Bets:
+Total 1 (+225): 1,93 (W)
+Total 2 (+237): 2,05 (L)
+Total 3 (+246): 2,07 (L)
+Total 4 (+229): 2,37 (W)
+Total 5 (+217): 2,92 (W)
+
+Handicap Bets for Warriors:
+Handicap Odds 1(+1 on Warriors win)(W): 2,20
+Handicap Odds 2(+5 on Warriors win)(L): 1,86
+Handicap Odds 3(+8 on Warriors win)(L): 2,47
+Handicap Odds 4(+11 on Warriors win)(L): 2,50
+Handicap Odds 5(+16 on Warriors win)(L): 2,90
+
+Handicap Bets for Lakers:
+Handicap Odds 1(+2 on Lakers win)(L): 2,43
+Handicap Odds 2(+5 on Lakers win)(L): 2,93
+Handicap Odds 3(+7 on Lakers win)(L): 2,74
+Handicap Odds 4(+13 on Lakers win)(L): 3,66
+Handicap Odds 5(+16 on Lakers win)(L): 3,67
+
+Quarter Bets:
+Quarter 1: Warriors 2,51 (W) - Lakers 1,57 (L)
+Quarter 2: Warriors 2,04 (W) - Lakers 2,75 (L)
+Quarter 3: Warriors 1,84 (L) - Lakers 2,26 (L)
+Quarter 4: Warriors 2,34 (L) - Lakers 2,76 (W)
+
+2024-11-09 14:57:41 [main] WARN  org.example.BettingAgency - Alice cannot place bet of $115.0. Insufficient balance: $78.0
+2024-11-09 14:57:41 [main] DEBUG org.example.User - Bob placed a bet of $61.0. New balance: $261.49
+2024-11-09 14:57:41 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Warriors, Amount=61.0
+2024-11-09 14:57:41 [main] DEBUG org.example.User - Bob won $134.20000000000002. New balance: $395.69000000000005
+2024-11-09 14:57:41 [main] INFO  org.example.BettingAgency - Bob won $134.20000000000002 with bet type handicap
+2024-11-09 14:57:41 [main] DEBUG org.example.User - Charlie placed a bet of $66.0. New balance: $317.89000000000004
+2024-11-09 14:57:41 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Warriors, Amount=66.0
+2024-11-09 14:57:41 [main] DEBUG org.example.User - Charlie won $145.20000000000002. New balance: $463.09000000000003
+2024-11-09 14:57:41 [main] INFO  org.example.BettingAgency - Charlie won $145.20000000000002 with bet type handicap
+2024-11-09 14:57:41 [main] DEBUG org.example.User - Pes Patron placed a bet of $98.0. New balance: $241.29999999999995
+2024-11-09 14:57:41 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Warriors, Amount=98.0
+2024-11-09 14:57:41 [main] DEBUG org.example.User - Pes Patron won $245.98. New balance: $487.28
+2024-11-09 14:57:41 [main] INFO  org.example.BettingAgency - Pes Patron won $245.98 with bet type winlose
+2024-11-09 14:57:41 [main] INFO  org.example.BettingAgency - Processing match: Match: Nets vs Celtics
+Final Score: Nets 105 - 108 Celtics
+Quarter 1: 20 - 30
+Quarter 2: 23 - 35
+Quarter 3: 30 - 22
+Quarter 4: 32 - 21
+
+Win/Lose: Nets Odds: 1.86 (L), Celtics Odds: 2.9 (W)
+
+Total Bets:
+Total 1 (+200): 2,60 (W)
+Total 2 (+208): 2,36 (W)
+Total 3 (+229): 2,10 (L)
+Total 4 (+219): 2,00 (L)
+Total 5 (+212): 1,82 (W)
+
+Handicap Bets for Nets:
+Handicap Odds 1(+2 on Nets win)(L): 2,40
+Handicap Odds 2(+4 on Nets win)(L): 2,66
+Handicap Odds 3(+7 on Nets win)(L): 3,10
+Handicap Odds 4(+11 on Nets win)(L): 3,24
+Handicap Odds 5(+18 on Nets win)(L): 4,03
+
+Handicap Bets for Celtics:
+Handicap Odds 1(+2 on Celtics win)(W): 1,69
+Handicap Odds 2(+4 on Celtics win)(L): 1,64
+Handicap Odds 3(+8 on Celtics win)(L): 2,31
+Handicap Odds 4(+12 on Celtics win)(L): 2,63
+Handicap Odds 5(+19 on Celtics win)(L): 3,18
+
+Quarter Bets:
+Quarter 1: Nets 2,79 (L) - Celtics 1,50 (W)
+Quarter 2: Nets 1,73 (L) - Celtics 1,99 (W)
+Quarter 3: Nets 1,58 (W) - Celtics 1,89 (L)
+Quarter 4: Nets 2,04 (W) - Celtics 2,33 (L)
+
+2024-11-09 14:57:41 [main] WARN  org.example.BettingAgency - Alice cannot place bet of $113.0. Insufficient balance: $78.0
+2024-11-09 14:57:41 [main] DEBUG org.example.User - Bob placed a bet of $89.0. New balance: $306.69000000000005
+2024-11-09 14:57:41 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Celtics, Amount=89.0
+2024-11-09 14:57:41 [main] INFO  org.example.BettingAgency - Bob lost $89.0 with bet type handicap
+2024-11-09 14:57:41 [main] DEBUG org.example.User - Charlie placed a bet of $71.0. New balance: $392.09000000000003
+2024-11-09 14:57:41 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Celtics, Amount=71.0
+2024-11-09 14:57:41 [main] DEBUG org.example.User - Charlie won $205.9. New balance: $597.99
+2024-11-09 14:57:41 [main] INFO  org.example.BettingAgency - Charlie won $205.9 with bet type winlose
+2024-11-09 14:57:41 [main] DEBUG org.example.User - Pes Patron placed a bet of $129.0. New balance: $358.28
+2024-11-09 14:57:41 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Celtics, Amount=129.0
+2024-11-09 14:57:41 [main] DEBUG org.example.User - Pes Patron won $218.01. New balance: $576.29
+2024-11-09 14:57:41 [main] INFO  org.example.BettingAgency - Pes Patron won $218.01 with bet type handicap
+2024-11-09 14:57:41 [main] INFO  org.example.BettingAgency - Processing match: Match: Warriors vs Heat
+Final Score: Warriors 104 - 109 Heat
+Quarter 1: 30 - 35
+Quarter 2: 22 - 31
+Quarter 3: 24 - 23
+Quarter 4: 28 - 20
+
+Win/Lose: Warriors Odds: 2.1 (L), Heat Odds: 2.72 (W)
+
+Total Bets:
+Total 1 (+199): 2,05 (W)
+Total 2 (+211): 2,09 (W)
+Total 3 (+219): 2,90 (L)
+Total 4 (+228): 2,02 (L)
+Total 5 (+206): 2,93 (W)
+
+Handicap Bets for Warriors:
+Handicap Odds 1(+1 on Warriors win)(L): 2,11
+Handicap Odds 2(+4 on Warriors win)(L): 2,63
+Handicap Odds 3(+7 on Warriors win)(L): 2,89
+Handicap Odds 4(+14 on Warriors win)(L): 3,83
+Handicap Odds 5(+18 on Warriors win)(L): 3,94
+
+Handicap Bets for Heat:
+Handicap Odds 1(+1 on Heat win)(W): 2,27
+Handicap Odds 2(+4 on Heat win)(W): 2,03
+Handicap Odds 3(+7 on Heat win)(L): 1,96
+Handicap Odds 4(+13 on Heat win)(L): 2,70
+Handicap Odds 5(+17 on Heat win)(L): 2,93
+
+Quarter Bets:
+Quarter 1: Warriors 2,18 (L) - Heat 1,84 (W)
+Quarter 2: Warriors 2,90 (L) - Heat 1,95 (W)
+Quarter 3: Warriors 1,64 (W) - Heat 1,66 (L)
+Quarter 4: Warriors 2,40 (W) - Heat 2,45 (L)
+
+2024-11-09 14:57:41 [main] DEBUG org.example.User - Alice placed a bet of $58.0. New balance: $20.0
+2024-11-09 14:57:41 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Warriors, Amount=58.0
+2024-11-09 14:57:41 [main] INFO  org.example.BettingAgency - Alice lost $58.0 with bet type winlose
+2024-11-09 14:57:41 [main] DEBUG org.example.User - Bob placed a bet of $70.0. New balance: $236.69000000000005
+2024-11-09 14:57:41 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Warriors, Amount=70.0
+2024-11-09 14:57:41 [main] INFO  org.example.BettingAgency - Bob lost $70.0 with bet type quarter
+2024-11-09 14:57:41 [main] DEBUG org.example.User - Charlie placed a bet of $51.0. New balance: $546.99
+2024-11-09 14:57:41 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Heat, Amount=51.0
+2024-11-09 14:57:41 [main] INFO  org.example.BettingAgency - Charlie lost $51.0 with bet type quarter
+2024-11-09 14:57:41 [main] DEBUG org.example.User - Pes Patron placed a bet of $99.0. New balance: $477.28999999999996
+2024-11-09 14:57:41 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Heat, Amount=99.0
+2024-11-09 14:57:41 [main] DEBUG org.example.User - Pes Patron won $224.73. New balance: $702.02
+2024-11-09 14:57:41 [main] INFO  org.example.BettingAgency - Pes Patron won $224.73 with bet type handicap
+2024-11-09 14:57:41 [main] INFO  org.example.BettingAgency - Processing match: Match: Celtics vs Warriors
+Final Score: Celtics 111 - 97 Warriors
+Quarter 1: 32 - 20
+Quarter 2: 21 - 20
+Quarter 3: 31 - 27
+Quarter 4: 27 - 30
+
+Win/Lose: Celtics Odds: 2.41 (W), Warriors Odds: 1.78 (L)
+
+Total Bets:
+Total 1 (+194): 2,60 (W)
+Total 2 (+213): 2,82 (L)
+Total 3 (+206): 2,36 (W)
+Total 4 (+223): 1,54 (L)
+Total 5 (+202): 1,51 (W)
+
+Handicap Bets for Celtics:
+Handicap Odds 1(+2 on Celtics win)(W): 3,05
+Handicap Odds 2(+5 on Celtics win)(W): 2,71
+Handicap Odds 3(+8 on Celtics win)(W): 2,28
+Handicap Odds 4(+12 on Celtics win)(W): 1,76
+Handicap Odds 5(+17 on Celtics win)(L): 2,10
+
+Handicap Bets for Warriors:
+Handicap Odds 1(+1 on Warriors win)(L): 2,47
+Handicap Odds 2(+5 on Warriors win)(L): 2,51
+Handicap Odds 3(+7 on Warriors win)(L): 3,10
+Handicap Odds 4(+12 on Warriors win)(L): 3,46
+Handicap Odds 5(+19 on Warriors win)(L): 3,96
+
+Quarter Bets:
+Quarter 1: Celtics 1,97 (W) - Warriors 2,62 (L)
+Quarter 2: Celtics 1,56 (W) - Warriors 1,57 (L)
+Quarter 3: Celtics 2,59 (W) - Warriors 2,87 (L)
+Quarter 4: Celtics 2,40 (L) - Warriors 1,66 (W)
+
+2024-11-09 14:57:41 [main] WARN  org.example.BettingAgency - Alice cannot place bet of $109.0. Insufficient balance: $20.0
+2024-11-09 14:57:41 [main] DEBUG org.example.User - Bob placed a bet of $77.0. New balance: $159.69000000000005
+2024-11-09 14:57:41 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Celtics, Amount=77.0
+2024-11-09 14:57:41 [main] INFO  org.example.BettingAgency - Bob lost $77.0 with bet type quarter
+2024-11-09 14:57:41 [main] DEBUG org.example.User - Charlie placed a bet of $80.0. New balance: $466.99
+2024-11-09 14:57:41 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Warriors, Amount=80.0
+2024-11-09 14:57:41 [main] INFO  org.example.BettingAgency - Charlie lost $80.0 with bet type quarter
+2024-11-09 14:57:41 [main] DEBUG org.example.User - Pes Patron placed a bet of $63.0. New balance: $639.02
+2024-11-09 14:57:41 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Celtics, Amount=63.0
+2024-11-09 14:57:41 [main] DEBUG org.example.User - Pes Patron won $148.67999999999998. New balance: $787.6999999999999
+2024-11-09 14:57:41 [main] INFO  org.example.BettingAgency - Pes Patron won $148.67999999999998 with bet type total
+2024-11-09 14:57:41 [main] INFO  org.example.BettingAgency - Final agency profit: $-684.3800000000001
+2024-11-09 14:58:40 [main] INFO  org.example.BettingAgency - Starting Betting Agency simulation...
+2024-11-09 14:58:40 [main] INFO  org.example.Match - Match initialized: Lakers vs Warriors
+2024-11-09 14:58:40 [main] INFO  org.example.Match - Match initialized: Warriors vs Lakers
+2024-11-09 14:58:40 [main] INFO  org.example.Match - Match initialized: Lakers vs Heat
+2024-11-09 14:58:40 [main] INFO  org.example.Match - Match initialized: Warriors vs Nets
+2024-11-09 14:58:40 [main] INFO  org.example.Match - Match initialized: Nets vs Celtics
+2024-11-09 14:58:40 [main] INFO  org.example.User - User created: Name=Alice, Balance=186.0
+2024-11-09 14:58:40 [main] INFO  org.example.User - User created: Name=Bob, Balance=129.0
+2024-11-09 14:58:40 [main] INFO  org.example.User - User created: Name=Charlie, Balance=239.0
+2024-11-09 14:58:40 [main] INFO  org.example.User - User created: Name=Pes Patron, Balance=203.0
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Alice placed a bet of $65.0. New balance: $121.0
+2024-11-09 14:58:40 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Warriors, Amount=65.0
+2024-11-09 14:58:40 [main] INFO  org.example.BettingAgency - Alice lost $65.0 with bet type total
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Bob placed a bet of $55.0. New balance: $74.0
+2024-11-09 14:58:40 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Lakers, Amount=55.0
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Bob won $107.8. New balance: $181.8
+2024-11-09 14:58:40 [main] INFO  org.example.BettingAgency - Bob won $107.8 with bet type winlose
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Charlie placed a bet of $72.0. New balance: $167.0
+2024-11-09 14:58:40 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Warriors, Amount=72.0
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Charlie won $169.20000000000002. New balance: $336.20000000000005
+2024-11-09 14:58:40 [main] INFO  org.example.BettingAgency - Charlie won $169.20000000000002 with bet type total
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Pes Patron placed a bet of $64.0. New balance: $139.0
+2024-11-09 14:58:40 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Warriors, Amount=64.0
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Pes Patron won $105.6. New balance: $244.6
+2024-11-09 14:58:40 [main] INFO  org.example.BettingAgency - Pes Patron won $105.6 with bet type quarter
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Alice placed a bet of $106.0. New balance: $15.0
+2024-11-09 14:58:40 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Warriors, Amount=106.0
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Alice won $288.32. New balance: $303.32
+2024-11-09 14:58:40 [main] INFO  org.example.BettingAgency - Alice won $288.32 with bet type winlose
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Bob placed a bet of $78.0. New balance: $103.80000000000001
+2024-11-09 14:58:40 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Warriors, Amount=78.0
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Bob won $244.92000000000002. New balance: $348.72
+2024-11-09 14:58:40 [main] INFO  org.example.BettingAgency - Bob won $244.92000000000002 with bet type handicap
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Charlie placed a bet of $127.0. New balance: $209.20000000000005
+2024-11-09 14:58:40 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Warriors, Amount=127.0
+2024-11-09 14:58:40 [main] INFO  org.example.BettingAgency - Charlie lost $127.0 with bet type quarter
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Pes Patron placed a bet of $62.0. New balance: $182.6
+2024-11-09 14:58:40 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Warriors, Amount=62.0
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Pes Patron won $212.66. New balance: $395.26
+2024-11-09 14:58:40 [main] INFO  org.example.BettingAgency - Pes Patron won $212.66 with bet type handicap
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Alice placed a bet of $70.0. New balance: $233.32
+2024-11-09 14:58:40 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Heat, Amount=70.0
+2024-11-09 14:58:40 [main] INFO  org.example.BettingAgency - Alice lost $70.0 with bet type total
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Bob placed a bet of $122.0. New balance: $226.72000000000003
+2024-11-09 14:58:40 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Heat, Amount=122.0
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Bob won $326.96000000000004. New balance: $553.6800000000001
+2024-11-09 14:58:40 [main] INFO  org.example.BettingAgency - Bob won $326.96000000000004 with bet type quarter
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Charlie placed a bet of $91.0. New balance: $118.20000000000005
+2024-11-09 14:58:40 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Lakers, Amount=91.0
+2024-11-09 14:58:40 [main] INFO  org.example.BettingAgency - Charlie lost $91.0 with bet type total
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Pes Patron placed a bet of $119.0. New balance: $276.26
+2024-11-09 14:58:40 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Heat, Amount=119.0
+2024-11-09 14:58:40 [main] INFO  org.example.BettingAgency - Pes Patron lost $119.0 with bet type total
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Alice placed a bet of $105.0. New balance: $128.32
+2024-11-09 14:58:40 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Nets, Amount=105.0
+2024-11-09 14:58:40 [main] INFO  org.example.BettingAgency - Alice lost $105.0 with bet type quarter
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Bob placed a bet of $60.0. New balance: $493.68000000000006
+2024-11-09 14:58:40 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Warriors, Amount=60.0
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Bob won $154.8. New balance: $648.48
+2024-11-09 14:58:40 [main] INFO  org.example.BettingAgency - Bob won $154.8 with bet type total
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Charlie placed a bet of $93.0. New balance: $25.200000000000045
+2024-11-09 14:58:40 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Warriors, Amount=93.0
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Charlie won $146.94. New balance: $172.14000000000004
+2024-11-09 14:58:40 [main] INFO  org.example.BettingAgency - Charlie won $146.94 with bet type total
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Pes Patron placed a bet of $81.0. New balance: $195.26
+2024-11-09 14:58:40 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Warriors, Amount=81.0
+2024-11-09 14:58:40 [main] INFO  org.example.BettingAgency - Pes Patron lost $81.0 with bet type quarter
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Alice placed a bet of $110.0. New balance: $18.319999999999993
+2024-11-09 14:58:40 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Celtics, Amount=110.0
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Alice won $171.6. New balance: $189.92
+2024-11-09 14:58:40 [main] INFO  org.example.BettingAgency - Alice won $171.6 with bet type total
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Bob placed a bet of $71.0. New balance: $577.48
+2024-11-09 14:58:40 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Celtics, Amount=71.0
+2024-11-09 14:58:40 [main] INFO  org.example.BettingAgency - Bob lost $71.0 with bet type handicap
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Charlie placed a bet of $106.0. New balance: $66.14000000000004
+2024-11-09 14:58:40 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Celtics, Amount=106.0
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Charlie won $250.16. New balance: $316.30000000000007
+2024-11-09 14:58:40 [main] INFO  org.example.BettingAgency - Charlie won $250.16 with bet type quarter
+2024-11-09 14:58:40 [main] DEBUG org.example.User - Pes Patron placed a bet of $63.0. New balance: $132.26
+2024-11-09 14:58:40 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Nets, Amount=63.0
+2024-11-09 14:58:40 [main] INFO  org.example.BettingAgency - Pes Patron lost $63.0 with bet type winlose
+2024-11-09 14:58:40 [main] INFO  org.example.BettingAgency - Final agency profit: $-458.96000000000004
+2024-11-09 15:03:12 [main] INFO  org.example.BettingAgency - Starting Betting Agency simulation...
+2024-11-09 15:03:12 [main] INFO  org.example.Match - Match initialized: Warriors vs Lakers
+2024-11-09 15:03:12 [main] INFO  org.example.Match - Match initialized: Heat vs Nets
+2024-11-09 15:03:12 [main] INFO  org.example.Match - Match initialized: Lakers vs Heat
+2024-11-09 15:03:12 [main] INFO  org.example.Match - Match initialized: Nets vs Heat
+2024-11-09 15:03:12 [main] INFO  org.example.Match - Match initialized: Nets vs Heat
+2024-11-09 15:03:12 [main] INFO  org.example.User - User created: Name=Alice, Balance=354.0
+2024-11-09 15:03:12 [main] INFO  org.example.User - User created: Name=Bob, Balance=123.0
+2024-11-09 15:03:12 [main] INFO  org.example.User - User created: Name=Charlie, Balance=268.0
+2024-11-09 15:03:12 [main] INFO  org.example.User - User created: Name=Pes Patron, Balance=211.0
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Alice placed a bet of $120.0. New balance: $234.0
+2024-11-09 15:03:12 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Lakers, Amount=120.0
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Alice won $291.6. New balance: $525.6
+2024-11-09 15:03:12 [main] INFO  org.example.BettingAgency - Alice won $291.6 with bet type winlose
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Bob placed a bet of $83.0. New balance: $40.0
+2024-11-09 15:03:12 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Lakers, Amount=83.0
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Bob won $201.69000000000003. New balance: $241.69000000000003
+2024-11-09 15:03:12 [main] INFO  org.example.BettingAgency - Bob won $201.69000000000003 with bet type winlose
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Charlie placed a bet of $70.0. New balance: $198.0
+2024-11-09 15:03:12 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Lakers, Amount=70.0
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Charlie won $170.10000000000002. New balance: $368.1
+2024-11-09 15:03:12 [main] INFO  org.example.BettingAgency - Charlie won $170.10000000000002 with bet type winlose
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Pes Patron placed a bet of $97.0. New balance: $114.0
+2024-11-09 15:03:12 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Lakers, Amount=97.0
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Pes Patron won $235.71. New balance: $349.71000000000004
+2024-11-09 15:03:12 [main] INFO  org.example.BettingAgency - Pes Patron won $235.71 with bet type winlose
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Alice placed a bet of $114.0. New balance: $411.6
+2024-11-09 15:03:12 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Nets, Amount=114.0
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Alice won $226.85999999999999. New balance: $638.46
+2024-11-09 15:03:12 [main] INFO  org.example.BettingAgency - Alice won $226.85999999999999 with bet type total
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Bob placed a bet of $92.0. New balance: $149.69000000000003
+2024-11-09 15:03:12 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Nets, Amount=92.0
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Bob won $203.32. New balance: $353.01
+2024-11-09 15:03:12 [main] INFO  org.example.BettingAgency - Bob won $203.32 with bet type winlose
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Charlie placed a bet of $95.0. New balance: $273.1
+2024-11-09 15:03:12 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Heat, Amount=95.0
+2024-11-09 15:03:12 [main] INFO  org.example.BettingAgency - Charlie lost $95.0 with bet type quarter
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Pes Patron placed a bet of $94.0. New balance: $255.71000000000004
+2024-11-09 15:03:12 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Nets, Amount=94.0
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Pes Patron won $229.35999999999999. New balance: $485.07000000000005
+2024-11-09 15:03:12 [main] INFO  org.example.BettingAgency - Pes Patron won $229.35999999999999 with bet type quarter
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Alice placed a bet of $75.0. New balance: $563.46
+2024-11-09 15:03:12 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Heat, Amount=75.0
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Alice won $192.0. New balance: $755.46
+2024-11-09 15:03:12 [main] INFO  org.example.BettingAgency - Alice won $192.0 with bet type winlose
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Bob placed a bet of $51.0. New balance: $302.01
+2024-11-09 15:03:12 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Lakers, Amount=51.0
+2024-11-09 15:03:12 [main] INFO  org.example.BettingAgency - Bob lost $51.0 with bet type quarter
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Charlie placed a bet of $70.0. New balance: $203.10000000000002
+2024-11-09 15:03:12 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Lakers, Amount=70.0
+2024-11-09 15:03:12 [main] INFO  org.example.BettingAgency - Charlie lost $70.0 with bet type handicap
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Pes Patron placed a bet of $52.0. New balance: $433.07000000000005
+2024-11-09 15:03:12 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Lakers, Amount=52.0
+2024-11-09 15:03:12 [main] INFO  org.example.BettingAgency - Pes Patron lost $52.0 with bet type handicap
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Alice placed a bet of $83.0. New balance: $672.46
+2024-11-09 15:03:12 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Nets, Amount=83.0
+2024-11-09 15:03:12 [main] INFO  org.example.BettingAgency - Alice lost $83.0 with bet type winlose
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Bob placed a bet of $75.0. New balance: $227.01
+2024-11-09 15:03:12 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Heat, Amount=75.0
+2024-11-09 15:03:12 [main] INFO  org.example.BettingAgency - Bob lost $75.0 with bet type total
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Charlie placed a bet of $91.0. New balance: $112.10000000000002
+2024-11-09 15:03:12 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Nets, Amount=91.0
+2024-11-09 15:03:12 [main] INFO  org.example.BettingAgency - Charlie lost $91.0 with bet type quarter
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Pes Patron placed a bet of $66.0. New balance: $367.07000000000005
+2024-11-09 15:03:12 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Heat, Amount=66.0
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Pes Patron won $161.04. New balance: $528.11
+2024-11-09 15:03:12 [main] INFO  org.example.BettingAgency - Pes Patron won $161.04 with bet type quarter
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Alice placed a bet of $68.0. New balance: $604.46
+2024-11-09 15:03:12 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Heat, Amount=68.0
+2024-11-09 15:03:12 [main] INFO  org.example.BettingAgency - Alice lost $68.0 with bet type quarter
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Bob placed a bet of $94.0. New balance: $133.01
+2024-11-09 15:03:12 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Heat, Amount=94.0
+2024-11-09 15:03:12 [main] INFO  org.example.BettingAgency - Bob lost $94.0 with bet type total
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Charlie placed a bet of $82.0. New balance: $30.100000000000023
+2024-11-09 15:03:12 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Nets, Amount=82.0
+2024-11-09 15:03:12 [main] INFO  org.example.BettingAgency - Charlie lost $82.0 with bet type handicap
+2024-11-09 15:03:12 [main] DEBUG org.example.User - Pes Patron placed a bet of $79.0. New balance: $449.11
+2024-11-09 15:03:12 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Nets, Amount=79.0
+2024-11-09 15:03:12 [main] INFO  org.example.BettingAgency - Pes Patron lost $79.0 with bet type winlose
+2024-11-09 15:03:12 [main] INFO  org.example.BettingAgency - Final agency profit: $-260.6800000000002
+2024-11-09 15:09:22 [main] INFO  org.example.BettingAgency - Starting Betting Agency simulation...
+2024-11-09 15:09:22 [main] INFO  org.example.Match - Match initialized: Warriors vs Heat
+2024-11-09 15:09:22 [main] INFO  org.example.Match - Match initialized: Nets vs Heat
+2024-11-09 15:09:22 [main] INFO  org.example.Match - Match initialized: Celtics vs Lakers
+2024-11-09 15:09:22 [main] INFO  org.example.Match - Match initialized: Lakers vs Nets
+2024-11-09 15:09:22 [main] INFO  org.example.Match - Match initialized: Heat vs Celtics
+2024-11-09 15:09:22 [main] INFO  org.example.User - User created: Name=Alice, Balance=200.0
+2024-11-09 15:09:22 [main] INFO  org.example.User - User created: Name=Bob, Balance=236.0
+2024-11-09 15:09:22 [main] INFO  org.example.User - User created: Name=Charlie, Balance=322.0
+2024-11-09 15:09:22 [main] INFO  org.example.User - User created: Name=Pes Patron, Balance=331.0
+2024-11-09 15:09:22 [main] DEBUG org.example.BettingAgency - Selected bet type: total
+2024-11-09 15:09:22 [main] DEBUG org.example.User - Alice placed a bet of $124.0. New balance: $76.0
+2024-11-09 15:09:22 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Warriors, Amount=124.0
+2024-11-09 15:09:22 [main] DEBUG org.example.User - Alice won $358.36. New balance: $434.36
+2024-11-09 15:09:22 [main] INFO  org.example.BettingAgency - Alice won $358.36 with bet type winlose
+2024-11-09 15:09:22 [main] DEBUG org.example.BettingAgency - Selected bet type: quarter
+2024-11-09 15:09:22 [main] DEBUG org.example.User - Bob placed a bet of $115.0. New balance: $121.0
+2024-11-09 15:09:22 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Heat, Amount=115.0
+2024-11-09 15:09:22 [main] INFO  org.example.BettingAgency - Bob lost $115.0 with bet type total
+2024-11-09 15:09:22 [main] DEBUG org.example.BettingAgency - Selected bet type: handicap
+2024-11-09 15:09:22 [main] DEBUG org.example.User - Charlie placed a bet of $105.0. New balance: $217.0
+2024-11-09 15:09:22 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Heat, Amount=105.0
+2024-11-09 15:09:22 [main] INFO  org.example.BettingAgency - Charlie lost $105.0 with bet type winlose
+2024-11-09 15:09:22 [main] DEBUG org.example.BettingAgency - Selected bet type: handicap
+2024-11-09 15:09:22 [main] DEBUG org.example.User - Pes Patron placed a bet of $81.0. New balance: $250.0
+2024-11-09 15:09:22 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Heat, Amount=81.0
+2024-11-09 15:09:22 [main] DEBUG org.example.User - Pes Patron won $127.17. New balance: $377.17
+2024-11-09 15:09:22 [main] INFO  org.example.BettingAgency - Pes Patron won $127.17 with bet type quarter
+2024-11-09 15:09:22 [main] DEBUG org.example.BettingAgency - Selected bet type: quarter
+2024-11-09 15:09:22 [main] DEBUG org.example.User - Alice placed a bet of $82.0. New balance: $352.36
+2024-11-09 15:09:22 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Heat, Amount=82.0
+2024-11-09 15:09:22 [main] INFO  org.example.BettingAgency - Alice lost $82.0 with bet type handicap
+2024-11-09 15:09:22 [main] DEBUG org.example.BettingAgency - Selected bet type: total
+2024-11-09 15:09:22 [main] WARN  org.example.BettingAgency - Bob cannot place bet of $126.0. Insufficient balance: $121.0
+2024-11-09 15:09:22 [main] DEBUG org.example.BettingAgency - Selected bet type: quarter
+2024-11-09 15:09:22 [main] DEBUG org.example.User - Charlie placed a bet of $63.0. New balance: $154.0
+2024-11-09 15:09:22 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Heat, Amount=63.0
+2024-11-09 15:09:22 [main] INFO  org.example.BettingAgency - Charlie lost $63.0 with bet type handicap
+2024-11-09 15:09:22 [main] DEBUG org.example.BettingAgency - Selected bet type: handicap
+2024-11-09 15:09:22 [main] DEBUG org.example.User - Pes Patron placed a bet of $97.0. New balance: $280.17
+2024-11-09 15:09:22 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Heat, Amount=97.0
+2024-11-09 15:09:22 [main] INFO  org.example.BettingAgency - Pes Patron lost $97.0 with bet type quarter
+2024-11-09 15:09:22 [main] DEBUG org.example.BettingAgency - Selected bet type: total
+2024-11-09 15:09:22 [main] DEBUG org.example.User - Alice placed a bet of $111.0. New balance: $241.36
+2024-11-09 15:09:22 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Celtics, Amount=111.0
+2024-11-09 15:09:22 [main] INFO  org.example.BettingAgency - Alice lost $111.0 with bet type handicap
+2024-11-09 15:09:22 [main] DEBUG org.example.BettingAgency - Selected bet type: winlose
+2024-11-09 15:09:22 [main] DEBUG org.example.User - Bob placed a bet of $107.0. New balance: $14.0
+2024-11-09 15:09:22 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Lakers, Amount=107.0
+2024-11-09 15:09:22 [main] INFO  org.example.BettingAgency - Bob lost $107.0 with bet type total
+2024-11-09 15:09:22 [main] DEBUG org.example.BettingAgency - Selected bet type: handicap
+2024-11-09 15:09:22 [main] DEBUG org.example.User - Charlie placed a bet of $94.0. New balance: $60.0
+2024-11-09 15:09:22 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Celtics, Amount=94.0
+2024-11-09 15:09:22 [main] INFO  org.example.BettingAgency - Charlie lost $94.0 with bet type handicap
+2024-11-09 15:09:22 [main] DEBUG org.example.BettingAgency - Selected bet type: handicap
+2024-11-09 15:09:22 [main] DEBUG org.example.User - Pes Patron placed a bet of $123.0. New balance: $157.17000000000002
+2024-11-09 15:09:22 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Celtics, Amount=123.0
+2024-11-09 15:09:22 [main] INFO  org.example.BettingAgency - Pes Patron lost $123.0 with bet type quarter
+2024-11-09 15:09:22 [main] DEBUG org.example.BettingAgency - Selected bet type: total
+2024-11-09 15:09:22 [main] DEBUG org.example.User - Alice placed a bet of $74.0. New balance: $167.36
+2024-11-09 15:09:22 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Lakers, Amount=74.0
+2024-11-09 15:09:22 [main] INFO  org.example.BettingAgency - Alice lost $74.0 with bet type handicap
+2024-11-09 15:09:22 [main] DEBUG org.example.BettingAgency - Selected bet type: total
+2024-11-09 15:09:22 [main] WARN  org.example.BettingAgency - Bob cannot place bet of $66.0. Insufficient balance: $14.0
+2024-11-09 15:09:22 [main] DEBUG org.example.BettingAgency - Selected bet type: winlose
+2024-11-09 15:09:22 [main] WARN  org.example.BettingAgency - Charlie cannot place bet of $118.0. Insufficient balance: $60.0
+2024-11-09 15:09:22 [main] DEBUG org.example.BettingAgency - Selected bet type: total
+2024-11-09 15:09:22 [main] DEBUG org.example.User - Pes Patron placed a bet of $67.0. New balance: $90.17000000000002
+2024-11-09 15:09:22 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Nets, Amount=67.0
+2024-11-09 15:09:22 [main] INFO  org.example.BettingAgency - Pes Patron lost $67.0 with bet type handicap
+2024-11-09 15:09:22 [main] DEBUG org.example.BettingAgency - Selected bet type: winlose
+2024-11-09 15:09:22 [main] DEBUG org.example.User - Alice placed a bet of $106.0. New balance: $61.360000000000014
+2024-11-09 15:09:22 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Heat, Amount=106.0
+2024-11-09 15:09:22 [main] INFO  org.example.BettingAgency - Alice lost $106.0 with bet type handicap
+2024-11-09 15:09:22 [main] DEBUG org.example.BettingAgency - Selected bet type: quarter
+2024-11-09 15:09:22 [main] WARN  org.example.BettingAgency - Bob cannot place bet of $96.0. Insufficient balance: $14.0
+2024-11-09 15:09:22 [main] DEBUG org.example.BettingAgency - Selected bet type: quarter
+2024-11-09 15:09:22 [main] WARN  org.example.BettingAgency - Charlie cannot place bet of $69.0. Insufficient balance: $60.0
+2024-11-09 15:09:22 [main] DEBUG org.example.BettingAgency - Selected bet type: total
+2024-11-09 15:09:22 [main] DEBUG org.example.User - Pes Patron placed a bet of $61.0. New balance: $29.170000000000016
+2024-11-09 15:09:22 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Heat, Amount=61.0
+2024-11-09 15:09:22 [main] INFO  org.example.BettingAgency - Pes Patron lost $61.0 with bet type winlose
+2024-11-09 15:09:22 [main] INFO  org.example.BettingAgency - Final agency profit: $924.47
+2024-11-09 15:17:42 [main] INFO  org.example.BettingAgency - Starting Betting Agency simulation...
+2024-11-09 15:17:43 [main] INFO  org.example.Match - Match initialized: Heat vs Lakers
+2024-11-09 15:17:43 [main] INFO  org.example.Match - Match initialized: Warriors vs Heat
+2024-11-09 15:17:43 [main] INFO  org.example.Match - Match initialized: Warriors vs Nets
+2024-11-09 15:17:43 [main] INFO  org.example.Match - Match initialized: Nets vs Lakers
+2024-11-09 15:17:43 [main] INFO  org.example.Match - Match initialized: Nets vs Celtics
+2024-11-09 15:17:43 [main] INFO  org.example.User - User created: Name=Alice, Balance=363.0
+2024-11-09 15:17:43 [main] INFO  org.example.User - User created: Name=Bob, Balance=322.0
+2024-11-09 15:17:43 [main] INFO  org.example.User - User created: Name=Charlie, Balance=459.0
+2024-11-09 15:17:43 [main] INFO  org.example.User - User created: Name=Pes Patron, Balance=354.0
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Alice placed a bet of $89.0. New balance: $274.0
+2024-11-09 15:17:43 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Heat, Amount=89.0
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Alice won $192.24. New balance: $466.24
+2024-11-09 15:17:43 [main] INFO  org.example.BettingAgency - Alice won $192.24 with bet type total
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Bob placed a bet of $115.0. New balance: $207.0
+2024-11-09 15:17:43 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Lakers, Amount=115.0
+2024-11-09 15:17:43 [main] INFO  org.example.Match - Quarter bet result - Team: Lakers, Win: true, Win Amount: 235.74999999999997
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Bob won $235.74999999999997. New balance: $442.75
+2024-11-09 15:17:43 [main] INFO  org.example.BettingAgency - Bob won $235.74999999999997 with bet type quarter
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Charlie placed a bet of $91.0. New balance: $368.0
+2024-11-09 15:17:43 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Lakers, Amount=91.0
+2024-11-09 15:17:43 [main] INFO  org.example.BettingAgency - Charlie lost $91.0 with bet type total
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Pes Patron placed a bet of $125.0. New balance: $229.0
+2024-11-09 15:17:43 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Heat, Amount=125.0
+2024-11-09 15:17:43 [main] INFO  org.example.Match - Quarter bet result - Team: Heat, Win: false, Win Amount: 0.0
+2024-11-09 15:17:43 [main] INFO  org.example.BettingAgency - Pes Patron lost $125.0 with bet type quarter
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Alice placed a bet of $83.0. New balance: $383.24
+2024-11-09 15:17:43 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Warriors, Amount=83.0
+2024-11-09 15:17:43 [main] INFO  org.example.BettingAgency - Alice lost $83.0 with bet type total
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Bob placed a bet of $83.0. New balance: $359.75
+2024-11-09 15:17:43 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Warriors, Amount=83.0
+2024-11-09 15:17:43 [main] INFO  org.example.Match - Quarter bet result - Team: Warriors, Win: true, Win Amount: 148.57
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Bob won $148.57. New balance: $508.32
+2024-11-09 15:17:43 [main] INFO  org.example.BettingAgency - Bob won $148.57 with bet type quarter
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Charlie placed a bet of $72.0. New balance: $296.0
+2024-11-09 15:17:43 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Heat, Amount=72.0
+2024-11-09 15:17:43 [main] INFO  org.example.BettingAgency - Charlie lost $72.0 with bet type handicap
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Pes Patron placed a bet of $108.0. New balance: $121.0
+2024-11-09 15:17:43 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Heat, Amount=108.0
+2024-11-09 15:17:43 [main] INFO  org.example.Match - Quarter bet result - Team: Heat, Win: false, Win Amount: 0.0
+2024-11-09 15:17:43 [main] INFO  org.example.BettingAgency - Pes Patron lost $108.0 with bet type quarter
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Alice placed a bet of $91.0. New balance: $292.24
+2024-11-09 15:17:43 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Nets, Amount=91.0
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Alice won $238.42000000000002. New balance: $530.6600000000001
+2024-11-09 15:17:43 [main] INFO  org.example.BettingAgency - Alice won $238.42000000000002 with bet type total
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Bob placed a bet of $110.0. New balance: $398.32
+2024-11-09 15:17:43 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Nets, Amount=110.0
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Bob won $174.9. New balance: $573.22
+2024-11-09 15:17:43 [main] INFO  org.example.BettingAgency - Bob won $174.9 with bet type winlose
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Charlie placed a bet of $103.0. New balance: $193.0
+2024-11-09 15:17:43 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Nets, Amount=103.0
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Charlie won $190.55. New balance: $383.55
+2024-11-09 15:17:43 [main] INFO  org.example.BettingAgency - Charlie won $190.55 with bet type handicap
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Pes Patron placed a bet of $55.0. New balance: $66.0
+2024-11-09 15:17:43 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Warriors, Amount=55.0
+2024-11-09 15:17:43 [main] INFO  org.example.BettingAgency - Pes Patron lost $55.0 with bet type winlose
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Alice placed a bet of $97.0. New balance: $433.6600000000001
+2024-11-09 15:17:43 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Nets, Amount=97.0
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Alice won $204.67. New balance: $638.33
+2024-11-09 15:17:43 [main] INFO  org.example.BettingAgency - Alice won $204.67 with bet type handicap
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Bob placed a bet of $79.0. New balance: $494.22
+2024-11-09 15:17:43 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Nets, Amount=79.0
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Bob won $232.26. New balance: $726.48
+2024-11-09 15:17:43 [main] INFO  org.example.BettingAgency - Bob won $232.26 with bet type total
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Charlie placed a bet of $130.0. New balance: $253.55
+2024-11-09 15:17:43 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Nets, Amount=130.0
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Charlie won $211.89999999999998. New balance: $465.45
+2024-11-09 15:17:43 [main] INFO  org.example.BettingAgency - Charlie won $211.89999999999998 with bet type winlose
+2024-11-09 15:17:43 [main] WARN  org.example.BettingAgency - Pes Patron cannot place bet of $71.0. Insufficient balance: $66.0
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Alice placed a bet of $94.0. New balance: $544.33
+2024-11-09 15:17:43 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Nets, Amount=94.0
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Alice won $180.48. New balance: $724.8100000000001
+2024-11-09 15:17:43 [main] INFO  org.example.BettingAgency - Alice won $180.48 with bet type winlose
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Bob placed a bet of $58.0. New balance: $668.48
+2024-11-09 15:17:43 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Celtics, Amount=58.0
+2024-11-09 15:17:43 [main] INFO  org.example.Match - Quarter bet result - Team: Celtics, Win: false, Win Amount: 0.0
+2024-11-09 15:17:43 [main] INFO  org.example.BettingAgency - Bob lost $58.0 with bet type quarter
+2024-11-09 15:17:43 [main] DEBUG org.example.User - Charlie placed a bet of $71.0. New balance: $394.45
+2024-11-09 15:17:43 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Celtics, Amount=71.0
+2024-11-09 15:17:43 [main] INFO  org.example.BettingAgency - Charlie lost $71.0 with bet type handicap
+2024-11-09 15:17:43 [main] WARN  org.example.BettingAgency - Pes Patron cannot place bet of $112.0. Insufficient balance: $66.0
+2024-11-09 15:17:43 [main] INFO  org.example.BettingAgency - Final agency profit: $-355.7399999999999
+2024-11-09 15:19:47 [main] INFO  org.example.BettingAgency - Starting Betting Agency simulation...
+2024-11-09 15:19:47 [main] INFO  org.example.Match - Match initialized: Nets vs Celtics
+2024-11-09 15:19:47 [main] INFO  org.example.Match - Match initialized: Nets vs Heat
+2024-11-09 15:19:47 [main] INFO  org.example.Match - Match initialized: Nets vs Warriors
+2024-11-09 15:19:47 [main] INFO  org.example.Match - Match initialized: Warriors vs Heat
+2024-11-09 15:19:47 [main] INFO  org.example.Match - Match initialized: Nets vs Lakers
+2024-11-09 15:19:47 [main] INFO  org.example.User - User created: Name=Alice, Balance=289.0
+2024-11-09 15:19:47 [main] INFO  org.example.User - User created: Name=Bob, Balance=449.0
+2024-11-09 15:19:47 [main] INFO  org.example.User - User created: Name=Charlie, Balance=137.0
+2024-11-09 15:19:47 [main] INFO  org.example.User - User created: Name=Pes Patron, Balance=373.0
+2024-11-09 15:19:47 [main] DEBUG org.example.User - Alice placed a bet of $95.0. New balance: $194.0
+2024-11-09 15:19:47 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Celtics, Amount=95.0
+2024-11-09 15:19:47 [main] INFO  org.example.Match - Quarter bet result - Team: Celtics, Win: false, Win Amount: 0.0
+2024-11-09 15:19:47 [main] INFO  org.example.BettingAgency - Alice lost $95.0 with bet type quarter
+2024-11-09 15:19:47 [main] DEBUG org.example.User - Bob placed a bet of $59.0. New balance: $390.0
+2024-11-09 15:19:47 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Celtics, Amount=59.0
+2024-11-09 15:19:47 [main] INFO  org.example.Match - Total bet result - Win: true, Win Amount: 162.83999999999997
+2024-11-09 15:19:47 [main] DEBUG org.example.User - Bob won $162.83999999999997. New balance: $552.8399999999999
+2024-11-09 15:19:47 [main] INFO  org.example.BettingAgency - Bob won $162.83999999999997 with bet type total
+2024-11-09 15:19:47 [main] DEBUG org.example.User - Charlie placed a bet of $98.0. New balance: $39.0
+2024-11-09 15:19:47 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Nets, Amount=98.0
+2024-11-09 15:19:47 [main] INFO  org.example.BettingAgency - Charlie lost $98.0 with bet type winlose
+2024-11-09 15:19:47 [main] DEBUG org.example.User - Pes Patron placed a bet of $114.0. New balance: $259.0
+2024-11-09 15:19:47 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Celtics, Amount=114.0
+2024-11-09 15:19:47 [main] INFO  org.example.Match - Quarter bet result - Team: Celtics, Win: false, Win Amount: 0.0
+2024-11-09 15:19:47 [main] INFO  org.example.BettingAgency - Pes Patron lost $114.0 with bet type quarter
+2024-11-09 15:19:47 [main] DEBUG org.example.User - Alice placed a bet of $70.0. New balance: $124.0
+2024-11-09 15:19:47 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Heat, Amount=70.0
+2024-11-09 15:19:47 [main] INFO  org.example.Match - Total bet result - Win: false, Win Amount: 0.0
+2024-11-09 15:19:47 [main] INFO  org.example.BettingAgency - Alice lost $70.0 with bet type total
+2024-11-09 15:19:47 [main] DEBUG org.example.User - Bob placed a bet of $88.0. New balance: $464.8399999999999
+2024-11-09 15:19:47 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Heat, Amount=88.0
+2024-11-09 15:19:47 [main] INFO  org.example.Match - Quarter bet result - Team: Heat, Win: false, Win Amount: 0.0
+2024-11-09 15:19:47 [main] INFO  org.example.BettingAgency - Bob lost $88.0 with bet type quarter
+2024-11-09 15:19:47 [main] WARN  org.example.BettingAgency - Charlie cannot place bet of $63.0. Insufficient balance: $39.0
+2024-11-09 15:19:47 [main] DEBUG org.example.User - Pes Patron placed a bet of $127.0. New balance: $132.0
+2024-11-09 15:19:47 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Heat, Amount=127.0
+2024-11-09 15:19:47 [main] INFO  org.example.Match - Quarter bet result - Team: Heat, Win: false, Win Amount: 0.0
+2024-11-09 15:19:47 [main] INFO  org.example.BettingAgency - Pes Patron lost $127.0 with bet type quarter
+2024-11-09 15:19:47 [main] DEBUG org.example.User - Alice placed a bet of $66.0. New balance: $58.0
+2024-11-09 15:19:47 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Nets, Amount=66.0
+2024-11-09 15:19:47 [main] INFO  org.example.Match - Handicap bet result - Team: Nets, Win: true, Win Amount: 166.32
+2024-11-09 15:19:47 [main] DEBUG org.example.User - Alice won $166.32. New balance: $224.32
+2024-11-09 15:19:47 [main] INFO  org.example.BettingAgency - Alice won $166.32 with bet type handicap
+2024-11-09 15:19:47 [main] DEBUG org.example.User - Bob placed a bet of $91.0. New balance: $373.8399999999999
+2024-11-09 15:19:47 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Warriors, Amount=91.0
+2024-11-09 15:19:47 [main] INFO  org.example.Match - Total bet result - Win: true, Win Amount: 171.98999999999998
+2024-11-09 15:19:47 [main] DEBUG org.example.User - Bob won $171.98999999999998. New balance: $545.8299999999999
+2024-11-09 15:19:47 [main] INFO  org.example.BettingAgency - Bob won $171.98999999999998 with bet type total
+2024-11-09 15:19:47 [main] WARN  org.example.BettingAgency - Charlie cannot place bet of $112.0. Insufficient balance: $39.0
+2024-11-09 15:19:47 [main] DEBUG org.example.User - Pes Patron placed a bet of $73.0. New balance: $59.0
+2024-11-09 15:19:47 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Warriors, Amount=73.0
+2024-11-09 15:19:47 [main] INFO  org.example.Match - Total bet result - Win: true, Win Amount: 189.07
+2024-11-09 15:19:47 [main] DEBUG org.example.User - Pes Patron won $189.07. New balance: $248.07
+2024-11-09 15:19:47 [main] INFO  org.example.BettingAgency - Pes Patron won $189.07 with bet type total
+2024-11-09 15:19:47 [main] DEBUG org.example.User - Alice placed a bet of $80.0. New balance: $144.32
+2024-11-09 15:19:47 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Warriors, Amount=80.0
+2024-11-09 15:19:47 [main] INFO  org.example.Match - Total bet result - Win: false, Win Amount: 0.0
+2024-11-09 15:19:47 [main] INFO  org.example.BettingAgency - Alice lost $80.0 with bet type total
+2024-11-09 15:19:47 [main] DEBUG org.example.User - Bob placed a bet of $118.0. New balance: $427.8299999999999
+2024-11-09 15:19:47 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Warriors, Amount=118.0
+2024-11-09 15:19:47 [main] INFO  org.example.Match - Handicap bet result - Team: Warriors, Win: false, Win Amount: 0.0
+2024-11-09 15:19:47 [main] INFO  org.example.BettingAgency - Bob lost $118.0 with bet type handicap
+2024-11-09 15:19:47 [main] WARN  org.example.BettingAgency - Charlie cannot place bet of $73.0. Insufficient balance: $39.0
+2024-11-09 15:19:47 [main] DEBUG org.example.User - Pes Patron placed a bet of $64.0. New balance: $184.07
+2024-11-09 15:19:47 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Warriors, Amount=64.0
+2024-11-09 15:19:47 [main] INFO  org.example.Match - Handicap bet result - Team: Warriors, Win: false, Win Amount: 0.0
+2024-11-09 15:19:47 [main] INFO  org.example.BettingAgency - Pes Patron lost $64.0 with bet type handicap
+2024-11-09 15:19:47 [main] DEBUG org.example.User - Alice placed a bet of $104.0. New balance: $40.31999999999999
+2024-11-09 15:19:47 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Nets, Amount=104.0
+2024-11-09 15:19:47 [main] INFO  org.example.Match - Quarter bet result - Team: Nets, Win: false, Win Amount: 0.0
+2024-11-09 15:19:47 [main] INFO  org.example.BettingAgency - Alice lost $104.0 with bet type quarter
+2024-11-09 15:19:47 [main] DEBUG org.example.User - Bob placed a bet of $74.0. New balance: $353.8299999999999
+2024-11-09 15:19:47 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Nets, Amount=74.0
+2024-11-09 15:19:47 [main] DEBUG org.example.User - Bob won $200.54. New balance: $554.3699999999999
+2024-11-09 15:19:47 [main] INFO  org.example.BettingAgency - Bob won $200.54 with bet type winlose
+2024-11-09 15:19:47 [main] WARN  org.example.BettingAgency - Charlie cannot place bet of $50.0. Insufficient balance: $39.0
+2024-11-09 15:19:47 [main] DEBUG org.example.User - Pes Patron placed a bet of $70.0. New balance: $114.07
+2024-11-09 15:19:47 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Lakers, Amount=70.0
+2024-11-09 15:19:47 [main] INFO  org.example.Match - Handicap bet result - Team: Lakers, Win: false, Win Amount: 0.0
+2024-11-09 15:19:47 [main] INFO  org.example.BettingAgency - Pes Patron lost $70.0 with bet type handicap
+2024-11-09 15:19:47 [main] INFO  org.example.BettingAgency - Final agency profit: $500.24000000000024
+2024-11-09 15:24:45 [main] INFO  org.example.BettingAgency - Starting Betting Agency simulation...
+2024-11-09 15:24:45 [main] INFO  org.example.Match - Match setup complete: Nets vs Lakers, Winning team: Lakers
+2024-11-09 15:24:45 [main] INFO  org.example.Match - Match initialized: Nets vs Lakers
+2024-11-09 15:24:45 [main] INFO  org.example.Match - Match setup complete: Nets vs Warriors, Winning team: Nets
+2024-11-09 15:24:45 [main] INFO  org.example.Match - Match initialized: Nets vs Warriors
+2024-11-09 15:24:45 [main] INFO  org.example.Match - Match setup complete: Nets vs Lakers, Winning team: Lakers
+2024-11-09 15:24:45 [main] INFO  org.example.Match - Match initialized: Nets vs Lakers
+2024-11-09 15:24:45 [main] INFO  org.example.Match - Match setup complete: Heat vs Celtics, Winning team: Heat
+2024-11-09 15:24:45 [main] INFO  org.example.Match - Match initialized: Heat vs Celtics
+2024-11-09 15:24:45 [main] INFO  org.example.Match - Match setup complete: Warriors vs Celtics, Winning team: Celtics
+2024-11-09 15:24:45 [main] INFO  org.example.Match - Match initialized: Warriors vs Celtics
+2024-11-09 15:24:45 [main] INFO  org.example.User - User created: Name=Alice, Balance=198.0
+2024-11-09 15:24:45 [main] INFO  org.example.User - User created: Name=Bob, Balance=248.0
+2024-11-09 15:24:45 [main] INFO  org.example.User - User created: Name=Charlie, Balance=314.0
+2024-11-09 15:24:45 [main] INFO  org.example.User - User created: Name=Pes Patron, Balance=494.0
+2024-11-09 15:24:45 [main] DEBUG org.example.User - Alice placed a bet of $112.0. New balance: $86.0
+2024-11-09 15:24:45 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Nets, Amount=112.0
+2024-11-09 15:24:45 [main] INFO  org.example.Match - Quarter bet result - Team: Nets, Win: false, Win Amount: 0.0
+2024-11-09 15:24:45 [main] INFO  org.example.BettingAgency - Alice lost $112.0 with bet type quarter
+2024-11-09 15:24:45 [main] DEBUG org.example.User - Bob placed a bet of $68.0. New balance: $180.0
+2024-11-09 15:24:45 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Lakers, Amount=68.0
+2024-11-09 15:24:45 [main] INFO  org.example.Match - Handicap bet result - Team: Lakers, Win: false, Win Amount: 0.0
+2024-11-09 15:24:45 [main] INFO  org.example.BettingAgency - Bob lost $68.0 with bet type handicap
+2024-11-09 15:24:45 [main] DEBUG org.example.User - Charlie placed a bet of $66.0. New balance: $248.0
+2024-11-09 15:24:45 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Lakers, Amount=66.0
+2024-11-09 15:24:45 [main] INFO  org.example.Match - Handicap bet result - Team: Lakers, Win: true, Win Amount: 150.48
+2024-11-09 15:24:45 [main] DEBUG org.example.User - Charlie won $150.48. New balance: $398.48
+2024-11-09 15:24:45 [main] INFO  org.example.BettingAgency - Charlie won $150.48 with bet type handicap
+2024-11-09 15:24:45 [main] DEBUG org.example.User - Pes Patron placed a bet of $65.0. New balance: $429.0
+2024-11-09 15:24:45 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Lakers, Amount=65.0
+2024-11-09 15:24:45 [main] INFO  org.example.Match - Total bet result - Win: false, Win Amount: 0.0
+2024-11-09 15:24:45 [main] INFO  org.example.BettingAgency - Pes Patron lost $65.0 with bet type total
+2024-11-09 15:24:45 [main] WARN  org.example.BettingAgency - Alice cannot place bet of $129.0. Insufficient balance: $86.0
+2024-11-09 15:24:45 [main] DEBUG org.example.User - Bob placed a bet of $58.0. New balance: $122.0
+2024-11-09 15:24:45 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Nets, Amount=58.0
+2024-11-09 15:24:45 [main] INFO  org.example.BettingAgency - Bob lost $58.0 with bet type quarter
+2024-11-09 15:24:45 [main] DEBUG org.example.User - Charlie placed a bet of $72.0. New balance: $326.48
+2024-11-09 15:24:45 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Nets, Amount=72.0
+2024-11-09 15:24:45 [main] INFO  org.example.Match - Handicap bet result - Team: Nets, Win: true, Win Amount: 205.20000000000002
+2024-11-09 15:24:45 [main] DEBUG org.example.User - Charlie won $205.20000000000002. New balance: $531.6800000000001
+2024-11-09 15:24:45 [main] INFO  org.example.BettingAgency - Charlie won $205.20000000000002 with bet type handicap
+2024-11-09 15:24:45 [main] DEBUG org.example.User - Pes Patron placed a bet of $61.0. New balance: $368.0
+2024-11-09 15:24:45 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Warriors, Amount=61.0
+2024-11-09 15:24:45 [main] INFO  org.example.BettingAgency - Pes Patron lost $61.0 with bet type quarter
+2024-11-09 15:24:45 [main] WARN  org.example.BettingAgency - Alice cannot place bet of $101.0. Insufficient balance: $86.0
+2024-11-09 15:24:45 [main] DEBUG org.example.User - Bob placed a bet of $71.0. New balance: $51.0
+2024-11-09 15:24:45 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Lakers, Amount=71.0
+2024-11-09 15:24:45 [main] INFO  org.example.Match - Total bet result - Win: true, Win Amount: 142.70999999999998
+2024-11-09 15:24:45 [main] DEBUG org.example.User - Bob won $142.70999999999998. New balance: $193.70999999999998
+2024-11-09 15:24:45 [main] INFO  org.example.BettingAgency - Bob won $142.70999999999998 with bet type total
+2024-11-09 15:24:45 [main] DEBUG org.example.User - Charlie placed a bet of $105.0. New balance: $426.68000000000006
+2024-11-09 15:24:45 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Nets, Amount=105.0
+2024-11-09 15:24:45 [main] INFO  org.example.Match - Total bet result - Win: true, Win Amount: 267.75
+2024-11-09 15:24:45 [main] DEBUG org.example.User - Charlie won $267.75. New balance: $694.4300000000001
+2024-11-09 15:24:45 [main] INFO  org.example.BettingAgency - Charlie won $267.75 with bet type total
+2024-11-09 15:24:45 [main] DEBUG org.example.User - Pes Patron placed a bet of $111.0. New balance: $257.0
+2024-11-09 15:24:45 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Nets, Amount=111.0
+2024-11-09 15:24:45 [main] INFO  org.example.Match - Quarter bet result - Team: Nets, Win: false, Win Amount: 0.0
+2024-11-09 15:24:45 [main] INFO  org.example.BettingAgency - Pes Patron lost $111.0 with bet type quarter
+2024-11-09 15:24:45 [main] WARN  org.example.BettingAgency - Alice cannot place bet of $115.0. Insufficient balance: $86.0
+2024-11-09 15:24:45 [main] DEBUG org.example.User - Bob placed a bet of $52.0. New balance: $141.70999999999998
+2024-11-09 15:24:45 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Heat, Amount=52.0
+2024-11-09 15:24:45 [main] DEBUG org.example.User - Bob won $136.24. New balance: $277.95
+2024-11-09 15:24:45 [main] INFO  org.example.BettingAgency - Bob won $136.24 with bet type winlose
+2024-11-09 15:24:45 [main] DEBUG org.example.User - Charlie placed a bet of $112.0. New balance: $582.4300000000001
+2024-11-09 15:24:45 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Celtics, Amount=112.0
+2024-11-09 15:24:45 [main] INFO  org.example.Match - Total bet result - Win: true, Win Amount: 244.16000000000003
+2024-11-09 15:24:45 [main] DEBUG org.example.User - Charlie won $244.16000000000003. New balance: $826.5900000000001
+2024-11-09 15:24:45 [main] INFO  org.example.BettingAgency - Charlie won $244.16000000000003 with bet type total
+2024-11-09 15:24:45 [main] DEBUG org.example.User - Pes Patron placed a bet of $130.0. New balance: $127.0
+2024-11-09 15:24:45 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Celtics, Amount=130.0
+2024-11-09 15:24:45 [main] INFO  org.example.Match - Total bet result - Win: false, Win Amount: 0.0
+2024-11-09 15:24:45 [main] INFO  org.example.BettingAgency - Pes Patron lost $130.0 with bet type total
+2024-11-09 15:24:45 [main] WARN  org.example.BettingAgency - Alice cannot place bet of $107.0. Insufficient balance: $86.0
+2024-11-09 15:24:45 [main] DEBUG org.example.User - Bob placed a bet of $89.0. New balance: $188.95
+2024-11-09 15:24:45 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Celtics, Amount=89.0
+2024-11-09 15:24:45 [main] INFO  org.example.Match - Handicap bet result - Team: Celtics, Win: true, Win Amount: 147.73999999999998
+2024-11-09 15:24:45 [main] DEBUG org.example.User - Bob won $147.73999999999998. New balance: $336.68999999999994
+2024-11-09 15:24:45 [main] INFO  org.example.BettingAgency - Bob won $147.73999999999998 with bet type handicap
+2024-11-09 15:24:45 [main] DEBUG org.example.User - Charlie placed a bet of $114.0. New balance: $712.5900000000001
+2024-11-09 15:24:45 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Celtics, Amount=114.0
+2024-11-09 15:24:45 [main] INFO  org.example.Match - Quarter bet result - Team: Celtics, Win: true, Win Amount: 218.88
+2024-11-09 15:24:45 [main] DEBUG org.example.User - Charlie won $218.88. New balance: $931.4700000000001
+2024-11-09 15:24:45 [main] INFO  org.example.BettingAgency - Charlie won $218.88 with bet type quarter
+2024-11-09 15:24:45 [main] DEBUG org.example.User - Pes Patron placed a bet of $125.0. New balance: $2.0
+2024-11-09 15:24:45 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Celtics, Amount=125.0
+2024-11-09 15:24:45 [main] DEBUG org.example.User - Pes Patron won $337.5. New balance: $339.5
+2024-11-09 15:24:45 [main] INFO  org.example.BettingAgency - Pes Patron won $337.5 with bet type winlose
+2024-11-09 15:24:45 [main] INFO  org.example.BettingAgency - Final agency profit: $-439.66
+2024-11-09 15:26:01 [main] INFO  org.example.BettingAgency - Starting Betting Agency simulation...
+2024-11-09 15:26:01 [main] INFO  org.example.Match - Match between: Lakers vs Heat, Winning team: Heat
+2024-11-09 15:26:01 [main] INFO  org.example.Match - Match between: Celtics vs Nets, Winning team: Nets
+2024-11-09 15:26:01 [main] INFO  org.example.Match - Match between: Heat vs Nets, Winning team: Heat
+2024-11-09 15:26:01 [main] INFO  org.example.Match - Match between: Heat vs Nets, Winning team: Heat
+2024-11-09 15:26:01 [main] INFO  org.example.Match - Match between: Celtics vs Heat, Winning team: Celtics
+2024-11-09 15:26:01 [main] INFO  org.example.User - User created: Name=Alice, Balance=316.0
+2024-11-09 15:26:01 [main] INFO  org.example.User - User created: Name=Bob, Balance=489.0
+2024-11-09 15:26:01 [main] INFO  org.example.User - User created: Name=Charlie, Balance=269.0
+2024-11-09 15:26:01 [main] INFO  org.example.User - User created: Name=Pes Patron, Balance=159.0
+2024-11-09 15:26:01 [main] DEBUG org.example.User - Alice placed a bet of $79.0. New balance: $237.0
+2024-11-09 15:26:01 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Lakers, Amount=79.0
+2024-11-09 15:26:01 [main] INFO  org.example.BettingAgency - Alice lost $79.0 with bet type quarter
+2024-11-09 15:26:01 [main] DEBUG org.example.User - Bob placed a bet of $64.0. New balance: $425.0
+2024-11-09 15:26:01 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Heat, Amount=64.0
+2024-11-09 15:26:01 [main] INFO  org.example.Match - Quarter bet result - Team: Heat, Win: false, Win Amount: 0.0
+2024-11-09 15:26:01 [main] INFO  org.example.BettingAgency - Bob lost $64.0 with bet type quarter
+2024-11-09 15:26:01 [main] DEBUG org.example.User - Charlie placed a bet of $72.0. New balance: $197.0
+2024-11-09 15:26:01 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Lakers, Amount=72.0
+2024-11-09 15:26:01 [main] INFO  org.example.Match - Total bet result - Win: true, Win Amount: 141.12
+2024-11-09 15:26:01 [main] DEBUG org.example.User - Charlie won $141.12. New balance: $338.12
+2024-11-09 15:26:01 [main] INFO  org.example.BettingAgency - Charlie won $141.12 with bet type total
+2024-11-09 15:26:01 [main] DEBUG org.example.User - Pes Patron placed a bet of $76.0. New balance: $83.0
+2024-11-09 15:26:01 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Heat, Amount=76.0
+2024-11-09 15:26:01 [main] INFO  org.example.Match - Total bet result - Win: false, Win Amount: 0.0
+2024-11-09 15:26:01 [main] INFO  org.example.BettingAgency - Pes Patron lost $76.0 with bet type total
+2024-11-09 15:26:01 [main] DEBUG org.example.User - Alice placed a bet of $110.0. New balance: $127.0
+2024-11-09 15:26:01 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Nets, Amount=110.0
+2024-11-09 15:26:01 [main] DEBUG org.example.User - Alice won $178.20000000000002. New balance: $305.20000000000005
+2024-11-09 15:26:01 [main] INFO  org.example.BettingAgency - Alice won $178.20000000000002 with bet type winlose
+2024-11-09 15:26:01 [main] DEBUG org.example.User - Bob placed a bet of $64.0. New balance: $361.0
+2024-11-09 15:26:01 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Celtics, Amount=64.0
+2024-11-09 15:26:01 [main] INFO  org.example.Match - Total bet result - Win: true, Win Amount: 118.4
+2024-11-09 15:26:01 [main] DEBUG org.example.User - Bob won $118.4. New balance: $479.4
+2024-11-09 15:26:01 [main] INFO  org.example.BettingAgency - Bob won $118.4 with bet type total
+2024-11-09 15:26:01 [main] DEBUG org.example.User - Charlie placed a bet of $90.0. New balance: $248.12
+2024-11-09 15:26:01 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Celtics, Amount=90.0
+2024-11-09 15:26:01 [main] INFO  org.example.Match - Total bet result - Win: true, Win Amount: 146.7
+2024-11-09 15:26:01 [main] DEBUG org.example.User - Charlie won $146.7. New balance: $394.82
+2024-11-09 15:26:01 [main] INFO  org.example.BettingAgency - Charlie won $146.7 with bet type total
+2024-11-09 15:26:01 [main] DEBUG org.example.User - Pes Patron placed a bet of $73.0. New balance: $10.0
+2024-11-09 15:26:01 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Nets, Amount=73.0
+2024-11-09 15:26:01 [main] DEBUG org.example.User - Pes Patron won $118.26. New balance: $128.26
+2024-11-09 15:26:01 [main] INFO  org.example.BettingAgency - Pes Patron won $118.26 with bet type winlose
+2024-11-09 15:26:01 [main] DEBUG org.example.User - Alice placed a bet of $61.0. New balance: $244.20000000000005
+2024-11-09 15:26:01 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Heat, Amount=61.0
+2024-11-09 15:26:01 [main] INFO  org.example.Match - Handicap bet result - Team: Heat, Win: false, Win Amount: 0.0
+2024-11-09 15:26:01 [main] INFO  org.example.BettingAgency - Alice lost $61.0 with bet type handicap
+2024-11-09 15:26:01 [main] DEBUG org.example.User - Bob placed a bet of $110.0. New balance: $369.4
+2024-11-09 15:26:01 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Nets, Amount=110.0
+2024-11-09 15:26:01 [main] INFO  org.example.Match - Handicap bet result - Team: Nets, Win: false, Win Amount: 0.0
+2024-11-09 15:26:01 [main] INFO  org.example.BettingAgency - Bob lost $110.0 with bet type handicap
+2024-11-09 15:26:01 [main] DEBUG org.example.User - Charlie placed a bet of $116.0. New balance: $278.82
+2024-11-09 15:26:01 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Nets, Amount=116.0
+2024-11-09 15:26:01 [main] INFO  org.example.BettingAgency - Charlie lost $116.0 with bet type winlose
+2024-11-09 15:26:01 [main] WARN  org.example.BettingAgency - Pes Patron cannot place bet of $129.0. Insufficient balance: $128.26
+2024-11-09 15:26:01 [main] DEBUG org.example.User - Alice placed a bet of $99.0. New balance: $145.20000000000005
+2024-11-09 15:26:01 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Heat, Amount=99.0
+2024-11-09 15:26:01 [main] INFO  org.example.Match - Handicap bet result - Team: Heat, Win: false, Win Amount: 0.0
+2024-11-09 15:26:01 [main] INFO  org.example.BettingAgency - Alice lost $99.0 with bet type handicap
+2024-11-09 15:26:01 [main] DEBUG org.example.User - Bob placed a bet of $94.0. New balance: $275.4
+2024-11-09 15:26:01 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Heat, Amount=94.0
+2024-11-09 15:26:01 [main] INFO  org.example.Match - Total bet result - Win: false, Win Amount: 0.0
+2024-11-09 15:26:01 [main] INFO  org.example.BettingAgency - Bob lost $94.0 with bet type total
+2024-11-09 15:26:01 [main] DEBUG org.example.User - Charlie placed a bet of $78.0. New balance: $200.82
+2024-11-09 15:26:01 [main] WARN  org.example.Match - Processing bet: Type=total, Team=Nets, Amount=78.0
+2024-11-09 15:26:01 [main] INFO  org.example.Match - Total bet result - Win: false, Win Amount: 0.0
+2024-11-09 15:26:01 [main] INFO  org.example.BettingAgency - Charlie lost $78.0 with bet type total
+2024-11-09 15:26:01 [main] DEBUG org.example.User - Pes Patron placed a bet of $127.0. New balance: $1.259999999999991
+2024-11-09 15:26:01 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Nets, Amount=127.0
+2024-11-09 15:26:01 [main] INFO  org.example.Match - Quarter bet result - Team: Nets, Win: false, Win Amount: 0.0
+2024-11-09 15:26:01 [main] INFO  org.example.BettingAgency - Pes Patron lost $127.0 with bet type quarter
+2024-11-09 15:26:01 [main] DEBUG org.example.User - Alice placed a bet of $94.0. New balance: $51.200000000000045
+2024-11-09 15:26:01 [main] WARN  org.example.Match - Processing bet: Type=winlose, Team=Heat, Amount=94.0
+2024-11-09 15:26:01 [main] INFO  org.example.BettingAgency - Alice lost $94.0 with bet type winlose
+2024-11-09 15:26:01 [main] DEBUG org.example.User - Bob placed a bet of $88.0. New balance: $187.39999999999998
+2024-11-09 15:26:01 [main] WARN  org.example.Match - Processing bet: Type=quarter, Team=Celtics, Amount=88.0
+2024-11-09 15:26:01 [main] INFO  org.example.Match - Quarter bet result - Team: Celtics, Win: false, Win Amount: 0.0
+2024-11-09 15:26:01 [main] INFO  org.example.BettingAgency - Bob lost $88.0 with bet type quarter
+2024-11-09 15:26:01 [main] DEBUG org.example.User - Charlie placed a bet of $125.0. New balance: $75.82
+2024-11-09 15:26:01 [main] WARN  org.example.Match - Processing bet: Type=handicap, Team=Celtics, Amount=125.0
+2024-11-09 15:26:01 [main] INFO  org.example.Match - Handicap bet result - Team: Celtics, Win: true, Win Amount: 240.0
+2024-11-09 15:26:01 [main] DEBUG org.example.User - Charlie won $240.0. New balance: $315.82
+2024-11-09 15:26:01 [main] INFO  org.example.BettingAgency - Charlie won $240.0 with bet type handicap
+2024-11-09 15:26:02 [main] WARN  org.example.BettingAgency - Pes Patron cannot place bet of $109.0. Insufficient balance: $1.259999999999991
+2024-11-09 15:26:02 [main] INFO  org.example.BettingAgency - Final agency profit: $677.3199999999999
