@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <!-- Консольний аппендер для виводу логів у консоль -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n" />
+        </Console>
+
+        <!-- Файловий аппендер для запису логів у файл -->
+        <File name="File" fileName="logs/app.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n" />
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <!-- Глобальний логгер з рівнем TRACE -->
+        <Root level="trace">
+<!--            <AppenderRef ref="Console" />-->
+            <AppenderRef ref="File" />
+        </Root>
+    </Loggers>
+</Configuration>
