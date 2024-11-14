@@ -3,96 +3,108 @@ package org.example;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class BettingAgency {
     private static final Logger logger = LogManager.getLogger(BettingAgency.class);
-    private static final Random random = new Random();
+    public static final Random random = new Random();
     private static final String[] TEAMS = {"Lakers", "Warriors", "Celtics", "Nets", "Heat"};
     private static final String[] USERS = {"Alice", "Bob", "Charlie", "Pes Patron"};
+    public static final int NUM_OF_MATCHES = 5;
+    private static final int MIN_INITIAL_BALANCE = 100;
+    private static final int MAX_INITIAL_BALANCE = 1000;
+    private static final int MIN_BET_AMOUNT = 50;
+    private static final int MAX_BET_AMOUNT = 200;
+    public static final int[] TOTAL_BET_VALUES = {
+            random.nextInt(-15,-12),
+            random.nextInt(-11,-6),
+            random.nextInt(-5,-1),
+            random.nextInt(1,6),
+            random.nextInt(7,15)};
+    public static final int MIN_QUARTER_SCORE = 20;
+    public static final int MAX_QUARTER_SCORE = 35;
+    public static final int MIN_HANDICAP_VALUE = 1;
+    public static final int MAX_HANDICAP_VALUE = 20;
+    public static final int QUANTITY_OF_HANDICAPS = 5;
+    public static final double MIN_ODDS = 1.1;
+    public static final double MAX_ODDS = 3.0;
+
 
     public static void main(String[] args) {
         logger.info("Starting Betting Agency simulation...");
-        List<Match> matches = generateMatches();
-        List<User> users = generateUsers();
+        List<Match> matches = Generation.generateMatches(TEAMS, NUM_OF_MATCHES);
+        List<User> users = Generation.generateUsers(USERS, MIN_INITIAL_BALANCE, MAX_INITIAL_BALANCE);
         double agencyProfit = 0;
 
         for (Match match : matches) {
-//            logger.info("Processing match: {}", match);
             System.out.println("\n=== New Match ===");
-
             System.out.println(match);
 
             System.out.println("Balances before match:");
-            for (User user1 : users) {
-                System.out.printf("%s: $%.2f\n", user1.getName(), user1.getBalance());
+            for (User user : users) {
+                System.out.printf("%s: $%.2f\n", user.getName(), user.getBalance());
             }
             System.out.println("");
 
             for (User user : users) {
-                // Генеруємо випадкову ставку
-                double betAmount = 50 + random.nextInt(81); // Ставка від 50 до 200
+                double betAmount = MIN_BET_AMOUNT + random.nextInt(MAX_BET_AMOUNT - MIN_BET_AMOUNT + 1);
                 String betType = getRandomBetType();
                 String chosenTeam = random.nextBoolean() ? match.getTeam1() : match.getTeam2();
-                int betIndex = random.nextInt(5); // Індекс для тоталів, гандикапів або чвертей
 
-                // Перевіряємо, чи може користувач зробити ставку
-                if (!match.canPlaceBet(user.getBalance(), betAmount)) {
+                int betIndexTotal = random.nextInt(TOTAL_BET_VALUES.length);
+                int betIndexHandicap = random.nextInt(QUANTITY_OF_HANDICAPS);
+                int betIndexQuarter = random.nextInt(4);
+
+                if (match.canPlaceBet(user.getBalance(), betAmount)) {
+                    try {
+                        user.placeBet(betAmount);
+                        agencyProfit += betAmount;
+                        double winAmount = 0;
+
+                        if(betType.equals("winlose")){
+                            System.out.printf("%s placed %s on %s with amount %.2f\n",
+                                    user.getName(), betType, chosenTeam, betAmount);
+                            winAmount = match.processBet(betType, 0, chosenTeam, betAmount, user.getBalance());
+                        }
+                        else if(betType.equals("total")){
+                            System.out.printf("%s placed %s %d with amount %.2f\n",
+                                    user.getName(), betType, betIndexTotal + 1, betAmount);
+                            winAmount = match.processBet(betType, betIndexTotal, chosenTeam, betAmount, user.getBalance());
+                        }
+                        else if(betType.equals("quarter")){
+                            System.out.printf("%s placed %s %d on %s with amount %.2f\n",
+                                    user.getName(), betType, betIndexQuarter + 1, chosenTeam, betAmount);
+                            winAmount = match.processBet(betType, betIndexQuarter, chosenTeam, betAmount, user.getBalance());
+                        }
+                        else if(betType.equals("handicap")){
+                            System.out.printf("%s placed %s %d on %s with amount %.2f\n",
+                                    user.getName(), betType, betIndexHandicap + 1, chosenTeam, betAmount);
+                            winAmount = match.processBet(betType, betIndexHandicap, chosenTeam, betAmount, user.getBalance());
+                        }
+
+
+                        if (winAmount > 0) {
+                            user.winBet(winAmount);
+                            agencyProfit -= winAmount;
+                            logger.info("{} won ${} with bet type {}", user.getName(), winAmount, betType);
+                            System.out.printf("%s won: %.2f\n", user.getName(), winAmount);
+                        } else {
+                            logger.info("{} lost ${} with bet type {}", user.getName(), betAmount, betType);
+                            System.out.printf("%s lost: %.2f\n", user.getName(), betAmount);
+                        }
+                    } catch (IllegalStateException | IllegalArgumentException e) {
+                        user.winBet(betAmount);
+                        agencyProfit -= betAmount;
+                        logger.error("Error processing bet for {}: {}", user.getName(), e.getMessage(), e);
+                        System.out.printf("Error processing bet for %s: %s\n", user.getName(), e.getMessage());
+                    }
+                } else {
                     logger.warn("{} cannot place bet of ${}. Insufficient balance: ${}", user.getName(), betAmount, user.getBalance());
-                    System.out.printf("%s cannot place bet of %.2f (insufficient balance: %.2f)\n",
-                            user.getName(), betAmount, user.getBalance());
-                    continue;
-                }
-
-                try {
-
-                    // Спочатку віднімаємо ставку з балансу користувача
-                    user.placeBet(betAmount);
-                    agencyProfit += betAmount;
-
-                    // Обробляємо ставку та отримуємо виграш
-                    double winAmount = match.processBet(betType, betIndex, chosenTeam, betAmount, user.getBalance());
-
-
-
-                    if(betType.equals("winlose")){
-                        System.out.printf("%s placed %s on %s with amount %.2f\n",
-                                user.getName(), betType, chosenTeam, betAmount);
-                    }
-                    else if(betType.equals("total")){
-                        System.out.printf("%s placed %s %d with amount %.2f\n",
-                                user.getName(), betType, betIndex + 1, betAmount);
-                    }
-                    else{
-                        System.out.printf("%s placed %s %d on %s with amount %.2f\n",
-                                user.getName(), betType, betIndex + 1, chosenTeam, betAmount);
-                    }
-
-
-
-                    if (winAmount > 0) {
-                        user.winBet(winAmount);
-                        agencyProfit -= winAmount;
-                        logger.info("{} won ${} with bet type {}", user.getName(), winAmount, betType);
-                        System.out.printf("%s won: %.2f\n", user.getName(), winAmount);
-                    } else {
-                        logger.info("{} lost ${} with bet type {}", user.getName(), betAmount, betType);
-                        System.out.printf("%s lost: %.2f\n", user.getName(), betAmount);
-                    }
-
-                } catch (IllegalStateException | IllegalArgumentException e) {
-                    // Повертаємо ставку у випадку помилки
-                    user.winBet(betAmount);
-                    agencyProfit -= betAmount;
-                    logger.error("Error processing bet for {}: {}", user.getName(), e.getMessage(), e);
-                    System.out.printf("Error processing bet for %s: %s\n",
-                            user.getName(), e.getMessage());
+                    System.out.printf("%s cannot place bet of %.2f (insufficient balance: %.2f)\n", user.getName(), betAmount, user.getBalance());
                 }
             }
 
-            // Виводимо баланси користувачів після матчу
             System.out.println("\nBalances after match:");
             for (User user : users) {
                 System.out.printf("%s: $%.2f\n", user.getName(), user.getBalance());
@@ -100,30 +112,7 @@ public class BettingAgency {
         }
 
         logger.info("Final agency profit: ${}", agencyProfit);
-        // Виводимо фінальний прибуток букмекерської контори
         System.out.printf("\nFinal agency profit: $%.2f\n", agencyProfit);
-    }
-
-    private static List<Match> generateMatches() {
-        List<Match> matches = new ArrayList<>();
-        for (int i = 0; i < 5; i++) {
-            String team1 = TEAMS[random.nextInt(TEAMS.length)];
-            String team2;
-            do {
-                team2 = TEAMS[random.nextInt(TEAMS.length)];
-            } while (team1.equals(team2));
-
-            matches.add(new Match(team1, team2));
-        }
-        return matches;
-    }
-
-    private static List<User> generateUsers() {
-        List<User> users = new ArrayList<>();
-        for (String userName : USERS) {
-            users.add(new User(userName, 100 + random.nextInt(401))); // Баланс від 100 до 1000
-        }
-        return users;
     }
 
     private static String getRandomBetType() {
