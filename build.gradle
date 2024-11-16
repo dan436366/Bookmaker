@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass = 'com.example.BettingAgency'
+    mainClass = 'com.example.BettingShell'
 }
 
 group = 'org.example'

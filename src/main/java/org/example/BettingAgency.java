@@ -9,7 +9,7 @@ import org.apache.logging.log4j.Logger;
 public class BettingAgency {
     private static final Logger logger = LogManager.getLogger(BettingAgency.class);
     public static final Random random = new Random();
-    private static final String[] TEAMS = {"Lakers", "Warriors", "Celtics", "Nets", "Heat"};
+    public static final String[] TEAMS = {"Lakers", "Warriors", "Celtics", "Nets", "Heat"};
     private static final String[] USERS = {"Alice", "Bob", "Charlie", "Pes Patron"};
     public static final int NUM_OF_MATCHES = 5;
     private static final int MIN_INITIAL_BALANCE = 100;
@@ -24,12 +24,13 @@ public class BettingAgency {
     public static final int QUANTITY_OF_HANDICAPS = 5;
     public static final double MIN_ODDS = 1.1;
     public static final double MAX_ODDS = 3.0;
+    public static double agencyProfit = 0;
 
     public static void main(String[] args) {
         logger.info("Starting Betting Agency simulation...");
         List<Match> matches = Generation.generateMatches(TEAMS, NUM_OF_MATCHES);
         List<User> users = Generation.generateUsers(USERS, MIN_INITIAL_BALANCE, MAX_INITIAL_BALANCE);
-        double agencyProfit = 0;
+        agencyProfit = 0;
 
         for (Match match : matches) {
             System.out.println("\n=== New Match ===");
@@ -78,6 +79,7 @@ public class BettingAgency {
 
         logger.info("Final agency profit: ${}", agencyProfit);
         System.out.printf("\nFinal agency profit: $%.2f\n", agencyProfit);
+        agencyProfit = 0;
     }
 
     private static String getRandomBetType() {
@@ -112,8 +114,8 @@ public class BettingAgency {
         if (winAmount > 0) {
             user.winBet(winAmount);
             agencyProfit -= winAmount;
-            logger.info("{} won ${} with bet type {}", user.getName(), winAmount, betType);
-            System.out.printf("%s won: %.2f\n", user.getName(), winAmount);
+            logger.info("{} won ${} with bet type {}", user.getName(), winAmount - betAmount, betType);
+            System.out.printf("%s won: %.2f\n", user.getName(), winAmount - betAmount);
         } else {
             logger.info("{} lost ${} with bet type {}", user.getName(), betAmount, betType);
             System.out.printf("%s lost: %.2f\n", user.getName(), betAmount);
