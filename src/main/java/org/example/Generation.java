@@ -18,6 +18,18 @@ public class Generation {
         return quarterScores;
     }
 
+    public static int[] generateTotals(int[] bounds) {
+        int[] totals = new int[bounds.length / 2];
+        int m = 0;
+        int n = m+1;
+        for (int i = 0; i < totals.length; i++) {
+            totals[i] =  random.nextInt(bounds[m], bounds[n]);
+            m+=2;
+            n+=2;
+        }
+        return totals;
+    }
+
     public static int calculateTotalScore(int[] quarterScores) {
         int totalScore = 0;
         for (int score : quarterScores) {
