@@ -1,6 +1,5 @@
 package org.example;
 
-// Leaf class for checking agency profit
 public class CheckProfitCommand implements Command {
     @Override
     public void execute() {

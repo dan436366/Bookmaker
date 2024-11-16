@@ -6,7 +6,6 @@ import java.util.Scanner;
 
 import static org.example.BettingShell.*;
 
-// Composite class to handle multiple commands
 public class Menu implements Command {
     private final List<Command> commands = new ArrayList<>();
     private final String name;

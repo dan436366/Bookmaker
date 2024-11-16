@@ -1,6 +1,5 @@
 package org.example;
 
-// Leaf class for running demo version
 public class DemoCommand implements Command {
     @Override
     public void execute() {

@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-// Leaf class for manual betting
 public class ManualBettingCommand implements Command {
     private final Scanner scanner = new Scanner(System.in);
     private List<User> users = new ArrayList<>();
