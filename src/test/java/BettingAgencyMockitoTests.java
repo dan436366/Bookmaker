@@ -1,117 +1,64 @@
-import org.example.Match;
-import org.example.User;
+import org.example.Generation;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
+import org.mockito.Mockito;
+import java.util.Random;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class BettingAgencyMockitoTests {
 
-    @Mock
-    private User mockUser;
+    @Test
+    void testGenerateQuarterScores() {
+        Random mockRandom = Mockito.mock(Random.class);
 
-    @Mock
-    private Match mockMatch;
+        when(mockRandom.nextInt(11)).thenReturn(2, 3, 4, 5);
 
-    private BettingAgencyMockitoTests () {
-        MockitoAnnotations.openMocks(this);
+        Generation generation = new Generation();
+        Generation.setRandom(mockRandom);
+
+        int[] quarterScores = generation.generateQuarterScores(10, 20);
+
+        assertEquals(12, quarterScores[0]);
+        assertEquals(13, quarterScores[1]);
+        assertEquals(14, quarterScores[2]);
+        assertEquals(15, quarterScores[3]);
+
+        verify(mockRandom, times(4)).nextInt(11);
     }
 
     @Test
-    void testProcessBet_TotalBet_Win() {
-        double betAmount = 100.0;
-        int betIndex = 0;
-        when(mockMatch.processBet("total", betIndex, "", betAmount, 500)).thenReturn(betAmount * 1.8);
+    void testGenerateTotals() {
+        Random mockRandom = Mockito.mock(Random.class);
 
-        double winAmount = mockMatch.processBet("total", betIndex, "", betAmount, 500);
-        assertEquals(betAmount * 1.8, winAmount, "Total Bet win amount should be correct on win.");
+        when(mockRandom.nextInt(10, 20)).thenReturn(15);
+        when(mockRandom.nextInt(30, 40)).thenReturn(38);
+
+        Generation.setRandom(mockRandom);
+
+        int[] bounds = {10, 20, 30, 40};
+        int[] totals = Generation.generateTotals(bounds);
+
+        assertEquals(15, totals[0]);
+        assertEquals(38, totals[1]);
+
+        verify(mockRandom).nextInt(10, 20);
+        verify(mockRandom).nextInt(30, 40);
     }
 
     @Test
-    void testProcessBet_TotalBet_Lose() {
-        double betAmount = 100.0;
-        int betIndex = 0;
-        when(mockMatch.processBet("total", betIndex, "", betAmount, 500)).thenReturn(0.0);
+    void testGenerateTeamOdds() {
+        Random mockRandom = Mockito.mock(Random.class);
 
-        double winAmount = mockMatch.processBet("total", betIndex, "", betAmount, 500);
-        assertEquals(0.0, winAmount, "Total Bet amount should be 0 on loss.");
-    }
+        when(mockRandom.nextDouble()).thenReturn(0.5);
 
-    @Test
-    void testProcessBet_HandicapBet_Team1_Win() {
-        double betAmount = 100.0;
-        int betIndex = 0;
-        when(mockMatch.processBet("handicap", betIndex, mockMatch.getTeam1(), betAmount, 500)).thenReturn(betAmount * 2.0);
+        Generation generation = new Generation();
+        Generation.setRandom(mockRandom);
 
-        double winAmount = mockMatch.processBet("handicap", betIndex, mockMatch.getTeam1(), betAmount, 500);
-        assertEquals(betAmount * 2.0, winAmount, "Handicap Bet win amount should be correct when Team 1 wins.");
-    }
+        double odds = generation.generateTeamOdds(1.0, 2.0);
 
-    @Test
-    void testProcessBet_HandicapBet_Team2_Lose() {
-        double betAmount = 100.0;
-        int betIndex = 0;
-        when(mockMatch.processBet("handicap", betIndex, mockMatch.getTeam2(), betAmount, 500)).thenReturn(0.0);
+        assertEquals(1.50, odds);
 
-        double winAmount = mockMatch.processBet("handicap", betIndex, mockMatch.getTeam2(), betAmount, 500);
-        assertEquals(0.0, winAmount, "Handicap Bet amount should be 0 on loss for Team 2.");
-    }
-
-    @Test
-    void testPlaceBet_UserHasEnoughBalance() {
-        Match mockMatch = mock(Match.class);
-        User mockUser = mock(User.class);
-
-        when(mockUser.getBalance()).thenReturn(100.0);
-        doNothing().when(mockUser).placeBet(50.0);
-
-        mockUser.placeBet(50.0);
-
-        verify(mockUser, times(1)).placeBet(50.0);
-        assertEquals(100.0, mockUser.getBalance(), "User should have enough balance to place bet");
-    }
-
-    @Test
-    void testPlaceBet_UserHasInsufficientBalance() {
-        User mockUser = mock(User.class);
-
-        when(mockUser.getBalance()).thenReturn(30.0);
-        doThrow(new IllegalArgumentException("Insufficient balance"))
-                .when(mockUser).placeBet(50.0);
-
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            mockUser.placeBet(50.0);
-        });
-
-        assertEquals("Insufficient balance", exception.getMessage());
-        verify(mockUser, times(1)).placeBet(50.0);
-    }
-
-    @Test
-    void testProcessBet_SuccessfulTotalBet() {
-        Match mockMatch = mock(Match.class);
-
-        when(mockMatch.processBet("total", 0, "", 100.0, 500.0))
-                .thenReturn(180.0);
-
-        double result = mockMatch.processBet("total", 0, "", 100.0, 500.0);
-        assertEquals(180.0, result, "Total bet should return correct win amount");
-
-        verify(mockMatch, times(1)).processBet("total", 0, "", 100.0, 500.0);
-    }
-
-    @Test
-    void testProcessBet_UnsuccessfulHandicapBet() {
-        Match mockMatch = mock(Match.class);
-
-        when(mockMatch.processBet("handicap", 1, "Lakers", 100.0, 500.0))
-                .thenReturn(0.0);
-
-        double result = mockMatch.processBet("handicap", 1, "Lakers", 100.0, 500.0);
-        assertEquals(0.0, result, "Handicap bet loss should return 0");
-
-        verify(mockMatch, times(1)).processBet("handicap", 1, "Lakers", 100.0, 500.0);
+        verify(mockRandom, times(1)).nextDouble();
     }
 }
