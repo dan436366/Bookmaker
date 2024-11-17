@@ -8,7 +8,11 @@ import java.util.TreeSet;
 
 public class Generation {
 
-    private static final Random random = new Random();
+    private static Random random = new Random();
+
+    public static void setRandom(Random newRandom) {
+        random = newRandom;
+    }
 
     public static int[] generateQuarterScores(int minScore, int maxScore) {
         int[] quarterScores = new int[4];
@@ -84,7 +88,6 @@ public class Generation {
             double team2Odds = minOdds + random.nextDouble() * (maxOdds - minOdds);
             boolean team1Win = team1QuarterScores[i] > team2QuarterScores[i];
             boolean team2Win = team2QuarterScores[i] > team1QuarterScores[i];
-//            quarterBets[i] = new QuarterBet(i + 1, team1Odds, team2Odds, team1Win, team2Win);
             quarterBets[i] = new QuarterBet.QuarterBuilder().quarter(i + 1).team1Odds(team1Odds).team2Odds(team2Odds).team1Win(team1Win).team2Win(team2Win).build();
         }
         return quarterBets;
@@ -106,7 +109,6 @@ public class Generation {
     public static List<User> generateUsers(String[] users, int minBalance, int maxBalance) {
         List<User> userList = new ArrayList<>();
         for (String userName : users) {
-//            userList.add(new User(userName, minBalance + random.nextInt(maxBalance - minBalance + 1)));
             userList.add(new User.UserBuilder().name(userName).balance(minBalance + random.nextInt(maxBalance - minBalance + 1)).build());
         }
         return userList;
