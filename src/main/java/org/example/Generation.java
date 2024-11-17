@@ -48,7 +48,7 @@ public class Generation {
             int totalValue = actualTotal + totalBetValues[i];
             double odds = minOdds + random.nextDouble() * (maxOdds - minOdds);
             boolean isWin = actualTotal > totalValue;
-            totalBets[i] = new TotalBet(totalValue, odds, isWin);
+            totalBets[i] = new TotalBet.TotalBetBuilder().totalValue(totalValue).odds(odds).isWinTotal(isWin).build();
         }
         return totalBets;
     }
@@ -66,7 +66,7 @@ public class Generation {
         for (int handicapValue : generatedValues) {
             boolean isWin = (teamScore - opponentScore - handicapValue) >= 0;
             double odds = calculateHandicapOdds(isWin, handicapValue, absDiff, minOdds, maxOdds);
-            handicapBets[index++] = new HandicapBet(handicapValue, odds, isWin);
+            handicapBets[index++] = new HandicapBet.HandicapBetBuilder().handicapValue(handicapValue).odds(odds).isWinHandicap(isWin).build();
         }
         return handicapBets;
     }
@@ -84,7 +84,8 @@ public class Generation {
             double team2Odds = minOdds + random.nextDouble() * (maxOdds - minOdds);
             boolean team1Win = team1QuarterScores[i] > team2QuarterScores[i];
             boolean team2Win = team2QuarterScores[i] > team1QuarterScores[i];
-            quarterBets[i] = new QuarterBet(i + 1, team1Odds, team2Odds, team1Win, team2Win);
+//            quarterBets[i] = new QuarterBet(i + 1, team1Odds, team2Odds, team1Win, team2Win);
+            quarterBets[i] = new QuarterBet.QuarterBuilder().quarter(i + 1).team1Odds(team1Odds).team2Odds(team2Odds).team1Win(team1Win).team2Win(team2Win).build();
         }
         return quarterBets;
     }
@@ -97,7 +98,7 @@ public class Generation {
             do {
                 team2 = teams[random.nextInt(teams.length)];
             } while (team1.equals(team2));
-            matches.add(new Match(team1, team2));
+            matches.add(new Match.MatchBuilder().team1(team1).team2(team2).build());
         }
         return matches;
     }
@@ -105,7 +106,8 @@ public class Generation {
     public static List<User> generateUsers(String[] users, int minBalance, int maxBalance) {
         List<User> userList = new ArrayList<>();
         for (String userName : users) {
-            userList.add(new User(userName, minBalance + random.nextInt(maxBalance - minBalance + 1)));
+//            userList.add(new User(userName, minBalance + random.nextInt(maxBalance - minBalance + 1)));
+            userList.add(new User.UserBuilder().name(userName).balance(minBalance + random.nextInt(maxBalance - minBalance + 1)).build());
         }
         return userList;
     }
