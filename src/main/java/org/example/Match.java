@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 import static org.example.BettingAgency.*;
 
 public class Match {
+
     private static final Logger logger = LogManager.getLogger(Match.class);
 
     private final String team1;
@@ -21,13 +22,92 @@ public class Match {
     public HandicapBet[] team2HandicapBets;
     public QuarterBet[] quarterBets;
     public String winningTeam;
-
     public int scoreDiff = Math.abs(team1Score - team2Score);
 
-    public Match(String team1, String team2) {
-        this.team1 = team1;
-        this.team2 = team2;
+    private Match(MatchBuilder matchBuilder) {
+        this.team1 = matchBuilder.team1;
+        this.team2 = matchBuilder.team2;
+        this.team1QuarterScores = matchBuilder.team1QuarterScores;
+        this.team2QuarterScores = matchBuilder.team2QuarterScores;
+        this.team1Odds = matchBuilder.team1Odds;
+        this.team2Odds = matchBuilder.team2Odds;
+        this.generatedNumsForTotal = matchBuilder.generatedNumsForTotal;
+        this.totalBets = matchBuilder.totalBets;
+        this.team1HandicapBets = matchBuilder.team1HandicapBets;
+        this.team2HandicapBets = matchBuilder.team2HandicapBets;
+        this.quarterBets = matchBuilder.quarterBets;
+        this.winningTeam = matchBuilder.winningTeam;
         initializeMatch();
+    }
+
+    public static class MatchBuilder {
+        private String team1;
+        private String team2;
+        private int[] team1QuarterScores;
+        private int[] team2QuarterScores;
+        private double team1Odds;
+        private double team2Odds;
+        private int[] generatedNumsForTotal;
+        private TotalBet[] totalBets;
+        private HandicapBet[] team1HandicapBets;
+        private HandicapBet[] team2HandicapBets;
+        private QuarterBet[] quarterBets;
+        private String winningTeam;
+
+        public MatchBuilder team1(String team1) {
+            this.team1 = team1;
+            return this;
+        }
+
+        public MatchBuilder team2(String team2) {
+            this.team2 = team2;
+            return this;
+        }
+
+        public MatchBuilder team1QuarterScores(int[] scores) {
+            this.team1QuarterScores = scores;
+            return this;
+        }
+
+        public MatchBuilder team2QuarterScores(int[] scores) {
+            this.team2QuarterScores = scores;
+            return this;
+        }
+
+        public MatchBuilder team1Odds(double odds) {
+            this.team1Odds = odds;
+            return this;
+        }
+
+        public MatchBuilder team2Odds(double odds) {
+            this.team2Odds = odds;
+            return this;
+        }
+
+        public MatchBuilder totalBets(TotalBet[] bets) {
+            this.totalBets = bets;
+            return this;
+        }
+
+        public MatchBuilder handicapBets(HandicapBet[] team1Bets, HandicapBet[] team2Bets) {
+            this.team1HandicapBets = team1Bets;
+            this.team2HandicapBets = team2Bets;
+            return this;
+        }
+
+        public MatchBuilder quarterBets(QuarterBet[] bets) {
+            this.quarterBets = bets;
+            return this;
+        }
+
+        public MatchBuilder winningTeam(String team) {
+            this.winningTeam = team;
+            return this;
+        }
+
+        public Match build() {
+            return new Match(this);
+        }
     }
 
     public String getTeam1() {
@@ -111,58 +191,6 @@ public class Match {
     public boolean canPlaceBet(double userBalance, double betAmount) {
         return betAmount > 0 && userBalance >= betAmount;
     }
-
-//    @Override
-//    public String toString() {
-//        StringBuilder sb = new StringBuilder();
-//        sb.append("Match: ").append(team1).append(" vs ").append(team2).append("\n");
-//        sb.append(String.format("Final Score: %s %d - %d %s\n", team1, team1Score, team2Score, team2));
-//
-//        for (int i = 0; i < 4; i++) {
-//            sb.append(String.format("Quarter %d: %d - %d\n", i + 1, team1QuarterScores[i], team2QuarterScores[i]));
-//        }
-//
-//        sb.append("\nWin/Lose: ").append(team1).append(" Odds: ").append(team1Odds)
-//                .append(team1.equals(winningTeam) ? " (W)" : " (L)").append(", ")
-//                .append(team2).append(" Odds: ").append(team2Odds)
-//                .append(team2.equals(winningTeam) ? " (W)" : " (L)").append("\n");
-//
-//        sb.append("\nTotal Bets:\n");
-//        for (int i = 0; i < totalBets.length; i++) {
-//            sb.append(String.format("Total %d (+%d): %.2f (%s)\n",
-//                    i + 1, totalBets[i].totalValue, totalBets[i].odds,
-//                    totalBets[i].isWinTotal ? "W" : "L"));
-//        }
-//
-//        sb.append("\nHandicap Bets for ").append(team1).append(":\n");
-//        for (int i = 0; i < team1HandicapBets.length; i++) {
-//            sb.append(String.format("Handicap Odds %d(+%d on %s win)(%s): %.2f\n",
-//                    i + 1,
-//                    team1HandicapBets[i].getHandicapValue(),
-//                    team1,
-//                    team1HandicapBets[i].isWinHandicap ? "W" : "L",
-//                    team1HandicapBets[i].getOdds()));
-//        }
-//
-//        sb.append("\nHandicap Bets for ").append(team2).append(":\n");
-//        for (int i = 0; i < team2HandicapBets.length; i++) {
-//            sb.append(String.format("Handicap Odds %d(+%d on %s win)(%s): %.2f\n",
-//                    i + 1,
-//                    team2HandicapBets[i].getHandicapValue(),
-//                    team2,
-//                    team2HandicapBets[i].isWinHandicap ? "W" : "L",
-//                    team2HandicapBets[i].getOdds()));
-//        }
-//
-//        sb.append("\nQuarter Bets:\n");
-//        for (QuarterBet qBet : quarterBets) {
-//            sb.append(String.format("Quarter %d: %s %.2f (%s) - %s %.2f (%s)\n",
-//                    qBet.getQuarter(), team1, qBet.getTeam1Odds(), qBet.isTeam1Win() ? "W" : "L",
-//                    team2, qBet.getTeam2Odds(), qBet.isTeam2Win() ? "W" : "L"));
-//        }
-//
-//        return sb.toString();
-//    }
 
     public String toString() {
         StringBuilder sb = new StringBuilder();

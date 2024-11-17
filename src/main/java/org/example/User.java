@@ -8,10 +8,29 @@ public class User {
     private final String name;
     private double balance;
 
-    public User(String name, double balance) {
-        this.name = name;
-        this.balance = balance;
+    private User(UserBuilder userBuilder) {
+        this.name = userBuilder.name;
+        this.balance = userBuilder.balance;
         logger.info("User created: Name={}, Balance={}", name, balance);
+    }
+
+    public static class UserBuilder {
+        private String name;
+        private double balance;
+
+        public UserBuilder name(String name) {
+            this.name = name;
+            return this;
+        }
+
+        public UserBuilder balance(double balance) {
+            this.balance = balance;
+            return this;
+        }
+
+        public User build() {
+            return new User(this);
+        }
     }
 
     public void placeBet(double amount) {

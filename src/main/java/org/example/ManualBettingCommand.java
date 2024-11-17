@@ -48,14 +48,39 @@ public class ManualBettingCommand implements Command {
         String name = scanner.next();
         System.out.print("Enter initial balance: ");
         double balance = scanner.nextDouble();
-        users.add(new User(name, balance));
+        users.add(new User.UserBuilder().name(name).balance(balance).build());
+
         System.out.println("User created successfully!");
     }
 
     private void placeBet() {
         matches = Generation.generateMatches(BettingAgency.TEAMS, 3);
+        
+        User selectedUser = selectUser();
+        if (selectedUser == null) return;
 
-        // Select user
+        Match selectedMatch = selectMatch();
+        if (selectedMatch == null) return;
+
+        System.out.println("\nMatch Details:");
+        System.out.println(getMatchInfoWithoutWL(selectedMatch));
+
+        String betType = selectBetType();
+        if (betType == null) return;
+
+        String selectedTeam = selectTeam(selectedMatch, betType);
+        if (selectedTeam == null && needsTeamSelection(betType)) return;
+
+        double betAmount = getBetAmount();
+        if (!selectedMatch.canPlaceBet(selectedUser.getBalance(), betAmount)) {
+            System.out.println("Insufficient balance for this bet!");
+            return;
+        }
+
+        processBetAndShowResults(selectedUser, selectedMatch, betType, selectedTeam, betAmount);
+    }
+
+    private User selectUser() {
         System.out.println("\nSelect user:");
         for (int i = 0; i < users.size(); i++) {
             System.out.printf("%d) %s (Balance: $%.2f)\n", i + 1, users.get(i).getName(), users.get(i).getBalance());
@@ -64,12 +89,12 @@ public class ManualBettingCommand implements Command {
 
         if (userChoice < 0 || userChoice >= users.size()) {
             System.out.println("Error: Invalid user selection!");
-            return;
+            return null;
         }
+        return users.get(userChoice);
+    }
 
-        User selectedUser = users.get(userChoice);
-
-        // Select match
+    private Match selectMatch() {
         System.out.println("\nSelect match:");
         for (int i = 0; i < matches.size(); i++) {
             Match match = matches.get(i);
@@ -79,14 +104,12 @@ public class ManualBettingCommand implements Command {
 
         if (matchChoice < 0 || matchChoice >= matches.size()) {
             System.out.println("Error: Invalid match selection!");
-            return;
+            return null;
         }
+        return matches.get(matchChoice);
+    }
 
-        Match selectedMatch = matches.get(matchChoice);
-
-        System.out.println("\nMatch Details:");
-        System.out.println(getMatchInfoWithoutWL(selectedMatch));
-
+    private String selectBetType() {
         System.out.println("\nSelect bet type:");
         System.out.println("1) Win/Lose");
         System.out.println("2) Total");
@@ -94,9 +117,8 @@ public class ManualBettingCommand implements Command {
         System.out.println("4) Quarter");
         int betTypeChoice = scanner.nextInt();
 
-        String betType;
         try {
-            betType = switch (betTypeChoice) {
+            return switch (betTypeChoice) {
                 case 1 -> "winlose";
                 case 2 -> "total";
                 case 3 -> "handicap";
@@ -105,107 +127,138 @@ public class ManualBettingCommand implements Command {
             };
         } catch (IllegalStateException e) {
             System.out.println("Error: Invalid bet type selection!");
+            return null;
+        }
+    }
+
+    private boolean needsTeamSelection(String betType) {
+        return betType.equals("winlose") || betType.equals("handicap") || betType.equals("quarter");
+    }
+
+    private String selectTeam(Match match, String betType) {
+        if (!needsTeamSelection(betType)) {
+            return match.getTeam1();
+        }
+
+        System.out.println("\nSelect team:");
+        System.out.println("1) " + match.getTeam1());
+        System.out.println("2) " + match.getTeam2());
+        int teamChoice = scanner.nextInt();
+
+        if (teamChoice != 1 && teamChoice != 2) {
+            System.out.println("Error: Invalid team selection!");
+            return null;
+        }
+        return teamChoice == 1 ? match.getTeam1() : match.getTeam2();
+    }
+
+    private double getBetAmount() {
+        System.out.print("\nEnter bet amount: ");
+        return scanner.nextDouble();
+    }
+
+    private void processBetAndShowResults(User user, Match match, String betType,
+                                          String selectedTeam, double betAmount) {
+        user.placeBet(betAmount);
+        int betIndex = getBetIndex(betType);
+        if (betIndex == -1 && !betType.equals("winlose")) {
+            user.winBet(betAmount);
             return;
         }
 
-        String selectedTeam = selectedMatch.getTeam1();
-        if (betType.equals("winlose") || betType.equals("handicap") || betType.equals("quarter")) {
-            System.out.println("\nSelect team:");
-            System.out.println("1) " + selectedMatch.getTeam1());
-            System.out.println("2) " + selectedMatch.getTeam2());
-            int teamChoice = scanner.nextInt();
+        double winAmount = match.processBet(betType, betIndex, selectedTeam, betAmount, user.getBalance());
+        showBetResults(user, match, betAmount, winAmount);
+    }
 
-            if (teamChoice != 1 && teamChoice != 2) {
-                System.out.println("Error: Invalid team selection!");
-                return;
-            }
-
-            selectedTeam = teamChoice == 1 ? selectedMatch.getTeam1() : selectedMatch.getTeam2();
+    private int getBetIndex(String betType) {
+        if (betType.equals("winlose")) {
+            return 0;
         }
 
-        System.out.print("\nEnter bet amount: ");
-        double betAmount = scanner.nextDouble();
+        int maxIndex = betType.equals("quarter") ? 4 : 5;
+        System.out.printf("Enter bet index (1-%d): ", maxIndex);
+        int betIndex = scanner.nextInt() - 1;
 
-        if (selectedMatch.canPlaceBet(selectedUser.getBalance(), betAmount)) {
-            selectedUser.placeBet(betAmount);
-            int betIndex = 0;
-            if (!betType.equals("winlose")) {
-                if (betType.equals("quarter")) {
-                    System.out.print("Enter bet index (1-4): ");
-                    betIndex = scanner.nextInt() - 1;
-                    if (betIndex < 0 || betIndex >= 4) {
-                        System.out.println("Error: Invalid quarter index!");
-                        selectedUser.winBet(betAmount);
-                        return;
-                    }
-                } else {
-                    System.out.print("Enter bet index (1-5): ");
-                    betIndex = scanner.nextInt() - 1;
-                    if (betIndex < 0 || betIndex >= 5) {
-                        System.out.println("Error: Invalid bet index!");
-                        selectedUser.winBet(betAmount);
-                        return;
-                    }
-                }
-            }
+        if (betIndex < 0 || betIndex >= maxIndex) {
+            System.out.println("Error: Invalid bet index!");
+            return -1;
+        }
+        return betIndex;
+    }
 
-            double winAmount = selectedMatch.processBet(betType, betIndex, selectedTeam, betAmount, selectedUser.getBalance());
-
-            if (winAmount > 0) {
-                selectedUser.winBet(winAmount);
-                Menu.addProfit(-(winAmount - betAmount)); // Agency loses the winnings but keeps the initial bet
-                System.out.printf("%s won: $%.2f\n", selectedUser.getName(), winAmount - betAmount);
-            } else {
-                Menu.addProfit(betAmount); // Agency keeps the entire bet amount
-                System.out.printf("%s lost: $%.2f\n", selectedUser.getName(), betAmount);
-            }
-
-            System.out.printf("\nUpdated balance for %s: $%.2f\n", selectedUser.getName(), selectedUser.getBalance());
-            System.out.println("\nMatch Results:");
-            System.out.println(selectedMatch);
+    private void showBetResults(User user, Match match, double betAmount, double winAmount) {
+        if (winAmount > 0) {
+            user.winBet(winAmount);
+            Menu.addProfit(-(winAmount - betAmount));
+            System.out.printf("%s won: $%.2f\n", user.getName(), winAmount - betAmount);
         } else {
-            System.out.println("Insufficient balance for this bet!");
+            Menu.addProfit(betAmount);
+            System.out.printf("%s lost: $%.2f\n", user.getName(), betAmount);
         }
+
+        System.out.printf("\nUpdated balance for %s: $%.2f\n", user.getName(), user.getBalance());
+        System.out.println("\nMatch Results:");
+        System.out.println(match);
     }
 
     private String getMatchInfoWithoutWL(Match match) {
         StringBuilder sb = new StringBuilder();
-        sb.append("Match: ").append(match.getTeam1()).append(" vs ").append(match.getTeam2()).append("\n");
+        appendMatchHeader(sb, match);
+        appendWinLoseOdds(sb, match);
+        appendTotalBets(sb, match);
+        appendHandicapBets(sb, match);
+        appendQuarterBets(sb, match);
+        return sb.toString();
+    }
 
+    private void appendMatchHeader(StringBuilder sb, Match match) {
+        sb.append("Match: ")
+                .append(match.getTeam1())
+                .append(" vs ")
+                .append(match.getTeam2())
+                .append("\n");
+    }
+
+    private void appendWinLoseOdds(StringBuilder sb, Match match) {
         sb.append("\nWin/Lose Odds: \n")
                 .append(match.getTeam1()).append(" Odds: ").append(match.team1Odds).append("\n")
                 .append(match.getTeam2()).append(" Odds: ").append(match.team2Odds).append("\n");
+    }
 
+    private void appendTotalBets(StringBuilder sb, Match match) {
         sb.append("\nTotal Bets:\n");
         for (int i = 0; i < match.totalBets.length; i++) {
             sb.append(String.format("Total %d (+%d): %.2f\n",
                     i + 1, match.totalBets[i].totalValue, match.totalBets[i].odds));
         }
+    }
 
-        sb.append("\nHandicap Bets for ").append(match.getTeam1()).append(":\n");
-        for (int i = 0; i < match.team1HandicapBets.length; i++) {
+    private void appendHandicapBets(StringBuilder sb, Match match) {
+        appendTeamHandicapBets(sb, match, match.getTeam1(), match.team1HandicapBets);
+        appendTeamHandicapBets(sb, match, match.getTeam2(), match.team2HandicapBets);
+    }
+
+    private void appendTeamHandicapBets(StringBuilder sb, Match match,
+                                        String team, HandicapBet[] handicapBets) {
+        sb.append("\nHandicap Bets for ").append(team).append(":\n");
+        for (int i = 0; i < handicapBets.length; i++) {
             sb.append(String.format("Handicap %d(+%d): %.2f\n",
                     i + 1,
-                    match.team1HandicapBets[i].getHandicapValue(),
-                    match.team1HandicapBets[i].getOdds()));
+                    handicapBets[i].getHandicapValue(),
+                    handicapBets[i].getOdds()));
         }
+    }
 
-        sb.append("\nHandicap Bets for ").append(match.getTeam2()).append(":\n");
-        for (int i = 0; i < match.team2HandicapBets.length; i++) {
-            sb.append(String.format("Handicap %d(+%d): %.2f\n",
-                    i + 1,
-                    match.team2HandicapBets[i].getHandicapValue(),
-                    match.team2HandicapBets[i].getOdds()));
-        }
-
+    private void appendQuarterBets(StringBuilder sb, Match match) {
         sb.append("\nQuarter Bets:\n");
         for (QuarterBet qBet : match.quarterBets) {
             sb.append(String.format("Quarter %d: %s %.2f - %s %.2f\n",
-                    qBet.getQuarter(), match.getTeam1(), qBet.getTeam1Odds(),
-                    match.getTeam2(), qBet.getTeam2Odds()));
+                    qBet.getQuarter(),
+                    match.getTeam1(),
+                    qBet.getTeam1Odds(),
+                    match.getTeam2(),
+                    qBet.getTeam2Odds()));
         }
-
-        return sb.toString();
     }
 
     @Override
